@@ -6,42 +6,93 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>هدر سایت</title>
+    <style>
+      
+    </style>
 </head>
-<body class="font-[Vazir] ">
-    <header class="bg-white p-4 pt-10">
+<body class="font-[Vazir] flex flex-col">
+    <header class="bg-white p-4 pt-10 h-[15vh]">
         <div class="container mx-auto flex items-center justify-between">
-            <!-- لوگو سمت راست -->
             <div class="text-2xl font-bold text-blue-600">
-                <img src="img/logo.png" alt="" class="w-[110px]">
+                <img src="../assets/img/logo-light.png" alt="" class="w-[140px]">
             </div>
-            
-            <!-- لینک‌های ناوبری -->
-            <nav class="hidden md:flex space-x-6 rtl:space-x-reverse text-gray-400">
-                <a href="#" class=" hover:text-blue-400">صفحه اصلی</a>
-                <a href="#" class=" hover:text-blue-400">درباره ما</a>
-                <a href="#" class=" hover:text-blue-400">خدمات</a>
-                <a href="#" class=" hover:text-blue-400">تماس با ما</a>
-                <a href="#" class=" hover:text-blue-400">صفحه اصلی</a>
-                <a href="#" class=" hover:text-blue-400">درباره ما</a>
-                <a href="#" class=" hover:text-blue-400">خدمات</a>
-                <a href="#" class=" hover:text-blue-400">تماس با ما</a>
+            <nav class="hidden md:flex space-x-6 rtl:space-x-reverse text-gray-400" id="nav-menu">
+                <a href="#" class="hover:text-blue-400">صفحه اصلی</a>
+                <a href="#" class="hover:text-blue-400">درباره ما</a>
+                <a href="#" class="hover:text-blue-400">خدمات</a>
+                <a href="#" class="hover:text-blue-400">تماس با ما</a>
             </nav>
-            
-            <!-- جستجو و دکمه ورود سمت چپ -->
-            <div class="flex items-center space-x-4 rtl:space-x-reverse ">
-                <form action="" class="border px-4  rounded-md pt-1 ml-10 border-gray-300">
-                    <input type="text" placeholder="جستجو..." class=" p-2 rounded-md text-sm focus:outline-none ">
+            <div class="flex items-center space-x-4 rtl:space-x-reverse">
+                <form action="" class="border px-4 rounded-md pt-1 ml-10 border-gray-300 hidden md:block">
+                    <input type="text" placeholder="جستجو..." class="p-2 rounded-md text-sm focus:outline-none">
                     <i class="fa-solid fa-magnifying-glass text-gray-300"></i>
                 </form>
-                <button class="bg-gray-300 text-white px-4 py-1.5 rounded-md hover:bg-blue-500 h-10">
+                <button class="bg-blue-400 text-white px-4 py-1.5 rounded-md hover:bg-blue-500 h-10">
                     <i class="fa-solid fa-circle-half-stroke pt-1.5"></i>
                 </button>
-                <button class="bg-gray-300 text-white px-4 py-1.5 rounded-md hover:bg-blue-500 h-10">
+                <button class="bg-blue-400 text-white px-4 py-1.5 rounded-md hover:bg-blue-500 h-10">
                     <i class="fa-solid fa-right-to-bracket pt-1.5"></i>
+                </button>
+                <button class="md:hidden text-gray-600 text-2xl" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
             </div>
         </div>
+        <br>
+        <!-- منوی موبایل -->
+        <div class="re md:hidden flex flex-col bg-white space-y-2 rounded-lg shadow-[0px_0px_15px_rgba(0,0,0,0.15)]" id="mobile-menu">
+            <p></p>
+            <a href="#">صفحه اصلی</a>
+            <a href="#">درباره ما</a>
+            <a href="#">خدمات</a>
+            <a href="#">تماس با ما</a>
+
+            <!-- فرم جستجو برای منوی موبایل -->
+            <form action="" class="pb-2 px-2">
+                <div class=" border w-[80%] p-2 rounded-md border-gray-300">
+                    <input type="text" placeholder="جستجو..." class="outline-none  w-[92%] pt-1">
+                    <i class="fa-solid fa-magnifying-glass text-gray-300 w-[3%]"></i>
+                </div>
+            </form>
+        </div>
     </header>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            let menu = document.getElementById('mobile-menu');
+            if (menu.style.height === '0px' || menu.style.height === '') {
+                menu.style.height = menu.scrollHeight + 'px';
+            } else {
+                menu.style.height = '0px';
+            }
+        });
+    </script>
 </body>
 </html>
+
+
+ <!-- این قسمت مربوط به پزوفایل و مطالب آن است -->
+<!-- 
+ <div class="contaner flex h-[85vh] w-full">
+    <div class="description w-[50%]  px-[90px] py-[80px]">
+        <b>
+            <h1 class="text-7xl">به وبسایت</h1>
+            <br>
+            <h1 class="text-7xl"> تخصصی پایتون</h1>
+            <br>
+            <h1 class="text-7xl"> خوش آمدید</h1>
+        </b>
+        <p class="pt-20 pb-10 text-gray-400">یادگیری علوم مختلف برنامه نویسی و ابزار های گوناگون در زمینه توسعه بک اند با پایتون در طراحی وب  اینترنت اشیا و هوش مصنوعی</p>
+        <i class="fa-solid fa-circle-check"></i>
+        <b>دوره های به روز</b>
+        <i class="fa-solid fa-circle-check mr-5"></i>
+        <b>مشاوره و منتورینگ</b>
+        <i class="fa-solid fa-circle-check mr-5"></i>
+        <b>انجام پروژه</b>
+    </div>
+    <div class="profile w-[50%] bg-blue-500 mr-5">
+        
+    </div>
+</div> -->

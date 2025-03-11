@@ -1,0 +1,12 @@
+body{
+    direction: rtl;
+}
+#mobile-menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+.re a{
+    border-bottom: 1px solid #ececec;
+    padding: 10px;
+}
