@@ -1,98 +1,221 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>main page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/slider.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <title>هدر سایت</title>
-    <style>
-      
-    </style>
 </head>
-<body class="font-[Vazir] flex flex-col">
-    <header class="bg-white p-4 pt-10 h-[15vh]">
-        <div class="container mx-auto flex items-center justify-between">
-            <div class="text-2xl font-bold text-blue-600">
-                <img src="../assets/img/logo-light.png" alt="" class="w-[140px]">
-            </div>
-            <nav class="hidden md:flex space-x-6 rtl:space-x-reverse text-gray-400" id="nav-menu">
-                <a href="#" class="hover:text-blue-400">صفحه اصلی</a>
-                <a href="#" class="hover:text-blue-400">درباره ما</a>
-                <a href="#" class="hover:text-blue-400">خدمات</a>
-                <a href="#" class="hover:text-blue-400">تماس با ما</a>
+<body>
+    <div class="contaner">
+        <div class="header">
+            <img class="logo-light" src="../assets/img/logo-light.png" alt="">
+            <img class="logo-dark" src="../assets/img/logo-dark.png" alt="">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="/">صفحه اصلی</a></li>
+                    <li><a href="/courses">دوره‌ها</a></li>
+                    <li><a href="/blog">وبلاگ</a></li>
+                    <li><a href="/events">رویدادها</a></li>
+                    <li><a href="/library">کتابخانه</a></li>
+                    <li><a href="/about">درباره من</a></li>
+                    <li><a href="/contact">تماس با من</a></li>
+                </ul>
             </nav>
-            <div class="flex items-center space-x-4 rtl:space-x-reverse">
-                <form action="" class="border px-4 rounded-md pt-1 ml-10 border-gray-300 hidden md:block">
-                    <input type="text" placeholder="جستجو..." class="p-2 rounded-md text-sm focus:outline-none">
-                    <i class="fa-solid fa-magnifying-glass text-gray-300"></i>
-                </form>
-                <button class="bg-blue-400 text-white px-4 py-1.5 rounded-md hover:bg-blue-500 h-10">
-                    <i class="fa-solid fa-circle-half-stroke pt-1.5"></i>
-                </button>
-                <button class="bg-blue-400 text-white px-4 py-1.5 rounded-md hover:bg-blue-500 h-10">
-                    <i class="fa-solid fa-right-to-bracket pt-1.5"></i>
-                </button>
-                <button class="md:hidden text-gray-600 text-2xl" id="menu-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+
+            <div class="contaner-btn">
+                <label class="burger" for="burger">
+                    <input type="checkbox" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="جستجو...">
+                    </form>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button id="themeToggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <div class="login">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <a href="#">ورود</a>
+                </div>
+
             </div>
         </div>
-        <br>
-        <!-- منوی موبایل -->
-        <div class="re md:hidden flex flex-col bg-white space-y-2 rounded-lg shadow-[0px_0px_15px_rgba(0,0,0,0.15)]" id="mobile-menu">
-            <p></p>
-            <a href="#">صفحه اصلی</a>
-            <a href="#">درباره ما</a>
-            <a href="#">خدمات</a>
-            <a href="#">تماس با ما</a>
 
-            <!-- فرم جستجو برای منوی موبایل -->
-            <form action="" class="pb-2 px-2">
-                <div class=" border w-[80%] p-2 rounded-md border-gray-300">
-                    <input type="text" placeholder="جستجو..." class="outline-none  w-[92%] pt-1">
-                    <i class="fa-solid fa-magnifying-glass text-gray-300 w-[3%]"></i>
-                </div>
-            </form>
+        <!-- Mobile nav -->
+        <div class="Show-menu">
+            <ul>
+                <li><a href="/">صفحه اصلی</a></li>
+                <li><a href="/courses">دوره‌ها</a></li>
+                <li><a href="/blog">وبلاگ</a></li>
+                <li><a href="/events">رویدادها</a></li>
+                <li><a href="/library">کتابخانه</a></li>
+                <li><a href="/about">درباره من</a></li>
+                <li><a href="/contact">تماس با من</a></li>
+                <li class="search">
+                    <form>
+                        <input type="text" placeholder="جستجو...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                    <button><i class="fa-solid fa-circle-half-stroke"></i></button>
+                </li>
+
+            </ul>
         </div>
-    </header>
+        <div class="container-re">
+            <div class="image">
+                <div class="content">
+                    <div class="border-r1 border">
+                        <div class="border-r2 border ">
+                            <div class="border-r3 border">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text">
+                <h1>
+                    به وبسایت  تخصصی پایتون خوش آمدید
+                </h1>
+                <br>
+                <p>یادگیری علوم مختلف برنامه نویسی و ابزار های گوناگون در زمینه توسعه بک اند با پایتون در طراحی وب ،
+                    اینترنت اشیا و هوش مصنوعی</p>
+                <br><br>
+                <i class="fa-solid fa-circle-check"></i>
+                <b>دوره های به روز  </b>
+                <i class="fa-solid fa-circle-check"></i>
+                <b>مشاوره و منتورینگ  </b>
+                <i class="fa-solid fa-circle-check"></i>
+                <b>انجام پروژه  </b>
+            </div>
+        </div>
+        <div class="container-re cont-2">
+            <div class="in-part">
+                <h2>0</h2>
+                <i class="fa-regular fa-circle-check"></i>
+            </div>
+            <div class="in-part">
+                <h2>0</h2>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="in-part">
+                <h2>0</h2>
+                <i class="fa-solid fa-video"></i>
+            </div>
+            <div class="in-part">
+                <h2>0</h2>
+                <i class="fa-solid fa-tv"></i>
+            </div>
+        </div>
+        <div class="container-re cont-3">
+            <h2>دوره های من در مکتبخونه</h2>
+            <p>زمان خود را صرف دیدن دوره های گوناگون نکنید و دوره های با کیفیت و با پشتیبانی رو تجربه کنید</p>
+            <br>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- کارت‌ها -->
+                    <div class="swiper-slide">
+                        <img src="../assets/img/python.jpg" alt="">
+                        <div class="Description">
+                            <span>پرطرفدار</span>
+                            <span>آموزش پایتون تخصصی</span>
+                        </div>
+                        <div class="Description">
+                            <span>+190 ویدیو</span>
+                            <span class="star"><i class="fa-solid fa-star"></i> 4</span>
+                        </div>
+                        <div class="Description">
+                            <span>1401:08:01</span>
+                            <span><i class="fa-regular fa-clock"></i></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/img/django.jpg" alt="">
+                        <div class="Description">
+                            <span>پرطرفدار</span>
+                            <span>آموزش پایتون تخصصی</span>
+                        </div>
+                        <div class="Description">
+                            <span>+190 ویدیو</span>
+                            <span class="star"><i class="fa-solid fa-star"></i> 4</span>
+                        </div>
+                        <div class="Description">
+                            <span>1401:08:01</span>
+                            <span><i class="fa-regular fa-clock"></i></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/img/mdjango.jpg" alt="">
+                        <div class="Description">
+                            <span>پرطرفدار</span>
+                            <span>آموزش پایتون تخصصی</span>
+                        </div>
+                        <div class="Description">
+                            <span>+190 ویدیو</span>
+                            <span class="star"><i class="fa-solid fa-star"></i> 4</span>
+                        </div>
+                        <div class="Description">
+                            <span>1401:08:01</span>
+                            <span><i class="fa-regular fa-clock"></i></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../assets/img/micropython.jpg" alt="">
+                        <div class="Description">
+                            <span>پرطرفدار</span>
+                            <span>آموزش پایتون تخصصی</span>
+                        </div>
+                        <div class="Description">
+                            <span>+190 ویدیو</span>
+                            <span class="star"><i class="fa-solid fa-star"></i> 4</span>
+                        </div>
+                        <div class="Description">
+                            <span>1401:08:01</span>
+                            <span><i class="fa-regular fa-clock"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- دکمه‌های ناوبری -->
+                <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+        </div>
+        <!-- <div class="container-re cont-4">
+                <div class="text">
+                    <br>
+                    <p>
+                        گاهی اوقات فقط دیدن ویدئو و یا تمرین برای انجام پروژه های شخصی و یا حتی خود یادگیری کافی نیست و نیاز به یک مشاور و راهنما طی یادگیری و انجام پروژه احساس میشه.
 
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            let menu = document.getElementById('mobile-menu');
-            if (menu.style.height === '0px' || menu.style.height === '') {
-                menu.style.height = menu.scrollHeight + 'px';
-            } else {
-                menu.style.height = '0px';
-            }
-        });
-    </script>
+                        تسهیل در یادگیری و معرفی منابع مفید
+                        
+                        کمک به یافتن راه حل مناسب برای پروژه
+                        
+                        قرار گیری در مسیر درست و تصحیح اشتباهات
+                        
+                        اطمینان خاطر از خروجی
+                        
+                    </p>
+                    <br><br>
+                </div>
+                <div class="image">
+                    <img src="Image/p6.svg" alt="">
+                </div>
+            </div> -->
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/slider.js"></script>
+    <script src="../assets/js/menu.js"></script>
+
 </body>
+
 </html>
-
-
- <!-- این قسمت مربوط به پزوفایل و مطالب آن است -->
-<!-- 
- <div class="contaner flex h-[85vh] w-full">
-    <div class="description w-[50%]  px-[90px] py-[80px]">
-        <b>
-            <h1 class="text-7xl">به وبسایت</h1>
-            <br>
-            <h1 class="text-7xl"> تخصصی پایتون</h1>
-            <br>
-            <h1 class="text-7xl"> خوش آمدید</h1>
-        </b>
-        <p class="pt-20 pb-10 text-gray-400">یادگیری علوم مختلف برنامه نویسی و ابزار های گوناگون در زمینه توسعه بک اند با پایتون در طراحی وب  اینترنت اشیا و هوش مصنوعی</p>
-        <i class="fa-solid fa-circle-check"></i>
-        <b>دوره های به روز</b>
-        <i class="fa-solid fa-circle-check mr-5"></i>
-        <b>مشاوره و منتورینگ</b>
-        <i class="fa-solid fa-circle-check mr-5"></i>
-        <b>انجام پروژه</b>
-    </div>
-    <div class="profile w-[50%] bg-blue-500 mr-5">
-        
-    </div>
-</div> -->
