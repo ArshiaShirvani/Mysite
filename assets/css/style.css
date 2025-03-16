@@ -368,7 +368,7 @@ p {
     width: 35%;
     display: flex;
     justify-content: space-between;
-    background-color: #e70000;
+    padding: 30px;
 }
 .data-blog{
     background-color: #121212;

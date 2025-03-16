@@ -101,5 +101,25 @@
 .slider:hover .slick-prev,
 .slider:hover .slick-next {
     opacity: 1;
-    /* دکمه‌ها هنگام قرار گرفتن موس روی اسلایدر نمایان می‌شوند */
+}
+.slider-content{
+    width: 100%;
+    max-width: 1350px;
+    width: 100%;
+    
+}
+.custom-slider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direction-slider{
+    text-align: center;
+    padding: 10px;
+}
+.custom-slider img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
 }
