@@ -548,4 +548,7 @@ p {
     .contaner-btn .login a {
         font-size: 12px;
     }
+    .swiper-slide img {
+        height: 150px;
+    }
 }
