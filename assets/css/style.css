@@ -321,12 +321,22 @@ p {
 }
 .right-content{
     width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 10px 40px;
+}
+.r2{
+    justify-content: start;
+}
+.r2 img{
+    width: 90%;
 }
 .left-content h2{
     font-size: 30px;
 }
 .right-content img{
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 .left-content span{
@@ -402,6 +412,7 @@ p {
 }
 .newsletter-content{
     background-color: #cccccc;
+    max-width: 1500px;
     width: 100%;
     height: 200px;
     border-radius: 10px;
