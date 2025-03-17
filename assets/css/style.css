@@ -438,7 +438,7 @@ p {
     background-color: #c0c0c0;
     max-width: 1500px;
     width: 100%;
-    height: 500px;
+    height: 200px;
     border-radius: 10px;
     transition: all 1s;
     display: flex;
@@ -459,8 +459,7 @@ p {
 .right-newsletter {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: center;
+    justify-content: center;
     text-align: right;
     width: 50%;
     padding: 0 50px;
@@ -470,12 +469,6 @@ p {
     font-size: 15px;
 }
 
-.right-newsletter img {
-    height: 400px;
-    width: 90%;
-    position: relative;
-    bottom: 45px;
-}
 
 .input-content {
     background-color: #fff;
