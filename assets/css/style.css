@@ -499,7 +499,6 @@ p {
     cursor: pointer;
     animation: big 1s linear infinite;
 }
-
 @keyframes big {
     0% {
         transform: scale(1);
@@ -546,6 +545,72 @@ footer {
     text-decoration: none;
 }
 
+footer {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 0 0 0;
+    border-top: 2px solid #ddd;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1380px;
+    margin: auto;
+}
+
+.footer-section {
+    width: 100%;
+    max-width: 220px;
+    margin-bottom: 20px;
+    direction: rtl;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 10px;
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+}
+span{
+    padding:1px;
+}
 @media only screen and (max-width: 1500px) {
     .blog-left {
         display: none;
@@ -583,6 +648,14 @@ footer {
 }
 
 @media only screen and (max-width: 1250px) {
+    .container {
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-bottom{
+        align-items: center;
+        flex-direction: column;
+    }
     .newsletter-content {
         flex-direction: column-reverse;
         align-items: center;
