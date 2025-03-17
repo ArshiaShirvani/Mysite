@@ -1,4 +1,3 @@
-
 #mobile-menu {
     height: 0;
     overflow: hidden;
@@ -247,9 +246,11 @@ button i {
     align-items: center;
     padding: 0 50px;
 }
+
 .in-part i {
     font-size: 50px;
 }
+
 .cont-2 {
     align-items: end;
     padding: 0 70px;
@@ -266,11 +267,11 @@ button i {
 }
 
 
-.cont-4{
-   padding: 70px;
+.cont-4 {
+    padding: 70px;
 }
 
-.cont-4 image img{
+.cont-4 image img {
     width: 100px;
     height: 100px;
 }
@@ -301,7 +302,7 @@ p {
     /* Responsive Design */
 }
 
-.content-container{
+.content-container {
     max-width: 1330px;
     width: 100%;
     display: flex;
@@ -309,47 +310,57 @@ p {
     align-items: center;
     padding: 50px 0;
 }
-.receiver{
+
+.receiver {
     display: flex;
     justify-content: space-between;
 }
-.left-content{
+
+.left-content {
     width: 50%;
     text-align: right;
     align-content: center;
     padding: 40px;
 }
-.right-content{
+
+.right-content {
     width: 50%;
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 10px 40px;
 }
-.r2{
+
+.r2 {
     justify-content: start;
 }
-.r2 img{
+
+.r2 img {
     width: 90%;
 }
-.left-content h2{
+
+.left-content h2 {
     font-size: 30px;
 }
-.right-content img{
+
+.right-content img {
     width: 80%;
     height: 100%;
 }
-.left-content span{
+
+.left-content span {
     display: flex;
     justify-content: end;
     align-items: center;
     margin: 15px 0;
 }
-.left-content span i{
+
+.left-content span i {
     color: #006cbe;
-    margin:0 10px;
+    margin: 0 10px;
 }
-.blog-container{
+
+.blog-container {
     max-width: 1330px;
     width: 100%;
     display: flex;
@@ -358,29 +369,34 @@ p {
     align-items: center;
     padding: 50px 0;
 }
-.blog{
+
+.blog {
     width: 100%;
     text-align: center;
     margin-right: 50px;
 }
-.blog-receiver{
+
+.blog-receiver {
     display: flex;
     width: 100%;
 }
-.blog-right{
+
+.blog-right {
     width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  
+
 }
-.blog-left{
+
+.blog-left {
     width: 35%;
     display: flex;
     justify-content: space-between;
     padding: 30px;
 }
-.data-blog{
+
+.data-blog {
     background-color: #121212;
     width: 20%;
     padding: 28px;
@@ -388,29 +404,35 @@ p {
     color: #fff;
     text-align: center;
 }
-.link-blog{
+
+.link-blog {
     width: 80%;
     text-align: right;
     padding: 10px;
 }
-.link-blog h3 a{
-   color: #000;
-   font-size: 20px;
+
+.link-blog h3 a {
+    color: #000;
+    font-size: 20px;
 }
-.link-blog p{
-    padding:10px 5px;
+
+.link-blog p {
+    padding: 10px 5px;
 }
-.link-blog p a{
+
+.link-blog p a {
     color: #6a6a6a;
     font-size: 15px;
-   
- }
- .blog-content{
+
+}
+
+.blog-content {
     width: 100%;
     display: flex;
     margin: 10px 0px;
 }
-.newsletter-content{
+
+.newsletter-content {
     background-color: #cccccc;
     max-width: 1500px;
     width: 100%;
@@ -420,28 +442,33 @@ p {
     display: flex;
     justify-content: space-between;
 }
-.newsletter-content:hover{
+
+.newsletter-content:hover {
     box-shadow: 0px 0px 15px 5px #ccc;
 }
-.left-newsletter{
+
+.left-newsletter {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:0 50px;
+    padding: 0 50px;
 }
-.right-newsletter{
+
+.right-newsletter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: right;
     width: 50%;
-    padding:0 50px;
+    padding: 0 50px;
 }
-.right-newsletter p{
+
+.right-newsletter p {
     font-size: 15px;
 }
-.input-content{
+
+.input-content {
     background-color: #fff;
     width: 100%;
     border-radius: 10px;
@@ -449,24 +476,27 @@ p {
     display: flex;
     justify-content: space-between;
 }
-.input-email{
+
+.input-email {
     border: none;
     outline: none;
     text-align: right;
     width: 80%;
-    border-radius:10px ;
+    border-radius: 10px;
     padding: 0 20px;
     font-size: 17px;
 }
-.newsletter-button{
+
+.newsletter-button {
     width: 20%;
     border-radius: 10px;
-    margin:5px;
+    margin: 5px;
     border: none;
     background-color: #0d1d2b;
     color: #fff;
     cursor: pointer;
 }
+
 footer {
     padding: 20px;
     text-align: center;
@@ -499,7 +529,58 @@ footer {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1500px) {
+    .blog-left {
+        display: none;
+    }
+
+    .blog-right {
+        width: 100%;
+    }
+
+    .data-blog {
+        height: 140px;
+    }
+
+
+    .border-r1 {
+        width: 520px;
+        height: 520px;
+    }
+
+    .border-r2 {
+        width: 495px;
+        height: 495px;
+    }
+
+    .border-r3 {
+        width: 470px;
+        height: 470px;
+    }
+
+
+    .content {
+        width: 520px;
+        height: 520px;
+    }
+}
+
 @media only screen and (max-width: 1250px) {
+    .newsletter-content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .left-newsletter {
+        width: 100%;
+        height: 50%;
+    }
+
+    .right-newsletter {
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
 
     .container-re {
         /* flex-direction: column; */
@@ -508,7 +589,7 @@ footer {
         padding: 20px;
         flex-wrap: wrap;
     }
-  
+
     .burger,
     .Show-menu {
         display: block;
@@ -565,7 +646,10 @@ footer {
         width: 260px;
         height: 260px;
     }
-
+    .content {
+        width: 300px;
+        height: 300px;
+    }
     .text {
         width: 100%;
         padding: 40px 20px;
@@ -584,13 +668,23 @@ footer {
     .contaner-btn .login a {
         font-size: 14px;
     }
-    .receiver{
+
+    .receiver {
         flex-direction: column-reverse;
         width: 100%;
     }
-    .right-content{
-        width: 100%;
+
+    .receiver-2 {
+        flex-direction: column;
     }
+
+    .right-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .left-content {
         width: 100%;
     }
@@ -604,7 +698,7 @@ footer {
         height: 10vh;
         padding: 5px 15px;
     }
-  
+
     .in-part {
         margin: 20px 0px;
     }
@@ -647,6 +741,7 @@ footer {
     .contaner-btn .login a {
         font-size: 12px;
     }
+
     .swiper-slide img {
         height: 150px;
     }
