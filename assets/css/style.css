@@ -321,6 +321,8 @@ p {
     text-align: right;
     align-content: center;
     padding: 40px;
+    transform: translateX(250%);
+    transition:transform 2s ease ;
 }
 
 .right-content {
@@ -329,8 +331,21 @@ p {
     justify-content: end;
     align-items: center;
     padding: 10px 40px;
+    transform: translateX(-250%);
+    transition:transform 2s ease ;
 }
-
+.show{
+    transform: translateX(0%);
+}
+.box-left:nth-child(even){
+    transform: translateX(150%);
+}
+.box-right:nth-child(even){
+    transform: translateX(150%);
+}
+.show:nth-child(even){
+    transform: translateX(0);
+}
 .r2 {
     justify-content: start;
 }
