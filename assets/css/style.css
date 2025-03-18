@@ -512,7 +512,7 @@ p {
     background-color: #0d1d2b;
     color: #fff;
     cursor: pointer;
-    animation: big 1s linear infinite;
+    animation: big 3s linear infinite;
 }
 @keyframes big {
     0% {
