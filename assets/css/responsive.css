@@ -74,3 +74,41 @@
 .Show-menu.active {
     max-height: 85vh;
 }
+.btn{
+    width: 18%;
+    background-color: #ccc;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.btn i{
+    font-size: 20px;
+}
+.cont-input{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #6a6a6a;
+    padding:7px 10px;
+    border-radius: 10px;
+
+}
+.cont-input input{
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+}
+.cont-input i{
+    color: #6a6a6a;
+    font-size: 20px;
+}
+.cont-input input::placeholder{
+    font-size: 18px;
+}
+.search-res{
+    display: flex;
+    gap: 20px;
+}

@@ -298,8 +298,7 @@ p {
 
 .logo-light {
     display: block;
-    /* در تم روشن نمایش داده شود */
-    /* Responsive Design */
+    
 }
 
 .content-container {
@@ -802,11 +801,32 @@ span{
 
 
 @media only screen and (max-width: 768px) {
+    .login p{
+        display: none;
+    }
+    .newsletter-content{
+        padding: 10px 0px;
+        height: 300px;
+    }
+    .input-email{
+        width: 70%;
+    }
+    .newsletter-button{
+        width: 30%;
+    }
     .header {
         height: 10vh;
         padding: 5px 15px;
     }
-
+    .data-blog{
+        display: none;
+    }
+    .link-blog{
+        width: 100%;
+    }
+    .blog {
+        margin: auto;
+    }
     .in-part {
         margin: 20px 0px;
     }
@@ -843,13 +863,16 @@ span{
 
     .contaner-btn .login {
         height: 35px;
-        padding: 5px 8px;
+        background-color: #0000;
+        padding: 0;
     }
 
     .contaner-btn .login a {
         font-size: 12px;
     }
-
+    .login i{
+        font-size: 25px;
+    }
     .swiper-slide img {
         height: 150px;
     }
