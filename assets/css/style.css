@@ -184,7 +184,7 @@ button i {
     border-radius: 50%;
 }
 
-.border {
+.border-r {
     border: 5px solid var(--primary-color);
     border-radius: 50%;
     animation: Rotate 10s linear infinite;
@@ -445,6 +445,7 @@ p {
 .blog-content {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     margin: 10px 0px;
 }
 
@@ -625,6 +626,7 @@ footer {
 span{
     padding:1px;
 }
+
 @media only screen and (max-width: 1500px) {
     .blog-left {
         display: none;
@@ -635,7 +637,8 @@ span{
     }
 
     .data-blog {
-        height: 140px;
+        height: 120px;
+        width: 200px;
     }
 
 
@@ -662,6 +665,7 @@ span{
 }
 
 @media only screen and (max-width: 1250px) {
+  
     .container {
         align-items: center;
         flex-direction: column;
@@ -712,7 +716,7 @@ span{
     }
 
     .header img {
-        width: 80px;
+        width: 120px;
     }
 
     .search {
@@ -732,7 +736,7 @@ span{
         padding: 20px;
     }
 
-    .border {
+    .border-r {
         width: 300px;
         height: 300px;
     }
