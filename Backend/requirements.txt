@@ -1,0 +1,6 @@
+django>3.2,<3.3
+python-decouple
+
+# postgreSQl modules
+psycopg
+psycopg2-binary
