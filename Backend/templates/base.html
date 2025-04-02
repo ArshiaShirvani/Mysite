@@ -1,0 +1,150 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/slider.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contaner">
+        <div class="header">
+            <img class="logo-light" src="{% static 'assets/img/logo-light.png' %}" alt="" style="width: 100px;">
+            <img class="logo-dark" src="{% static 'assets/img/logo-dark.png' %}" alt="" style="width: 100px;">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="/">صفحه اصلی</a></li>
+                    <li><a href="/courses">دوره‌ها</a></li>
+                    <li><a href="blog.html">وبلاگ</a></li>
+                    <li><a href="/events">رویدادها</a></li>
+                    <li><a href="/library">کتابخانه</a></li>
+                    <li><a href="/about">درباره من</a></li>
+                    <li><a href="/contact">تماس با من</a></li>
+                </ul>
+            </nav>
+
+            <div class="contaner-btn">
+                <label class="burger" for="burger">
+                    <input type="checkbox" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="جستجو...">
+                    </form>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button id="themeToggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <a href="login/login.html" class="login">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>ورود</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile nav -->
+        <div class="Show-menu">
+            <ul>
+                <li><a href="/">صفحه اصلی</a></li>
+                <li><a href="/courses">دوره‌ها</a></li>
+                <li><a href="blog.html">وبلاگ</a></li>
+                <li><a href="/events">رویدادها</a></li>
+                <li><a href="/library">کتابخانه</a></li>
+                <li><a href="/about">درباره من</a></li>
+                <li><a href="/contact">تماس با من</a></li>
+                <li class="search-res">
+                    <form action="" class="cont-input">
+                        <input type="text" placeholder="جستجو...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                    <button class="btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                </li>
+
+            </ul>
+        </div>
+        {% block content %}
+        
+        {% endblock %}
+        <footer>
+            <div class="container">
+                <div class="footer-section">
+                    <h3>لینک‌های مهم</h3>
+                    <ul>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">خدمات</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <p> ایمیل: info@example.com</p>
+                    <span>
+                        <p> تلفن: 09123456789</p>
+                    </span>
+                    <span>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </span>
+                </div>
+                <div class="footer-section">
+                    <h3>لینک‌های پر استفاده</h3>
+                    <ul>
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">خدمات</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                        <li><a href="#">حریم خصوصی</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section section">
+                    <h3>زبان های برنامه نویسی ما</h3>
+                    <div class="social-container">
+                        <ul>
+                            <li><a href="#">جنگو</a></li>
+                            <li><a href="#">جاوا اسکریپت</a></li>
+                            <li><a href="#">تیلویند</a></li>
+                            <li><a href="#">پایتون</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section section">
+                    <h3>درباره ما</h3>
+                    <div class="social-container">
+                        <p>
+                            بزرگترین هدف من تغییر روند آموزش و بالا بردن کیفیت تفکر توسعه دهنده هستش <br>تا بتونیم در
+                            جمع بزرگتری از دنیا فعالیت کنیم و بدون هیچ مشکلی در جایگاه های قوی تریم.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 .تمامی حقوق محفوظ است</p>
+                <p>.تمامی این حقوق مربوط به ارشیا شیروانی می باشد و هرگونه کپی رات غیر قانونی است</p>
+            </div>
+        </footer>
+    </div>
+    <script src="{% static 'assets/js/menu.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="{% static 'assets/js/slider.js' %}"></script>
+    <script src="{% static 'assets/js/animation.js' %}"></script>
+</body>
+
+</html>
