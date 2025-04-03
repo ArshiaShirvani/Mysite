@@ -1,0 +1,115 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'authentication/Styles/Fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'authentication/Styles/Style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <style>
+      
+    </style>
+</head>
+
+<body>
+    <div class="Container" id="Container">
+        <div class="Form-container Sign-up">
+            <form method="post" action="{% url 'accounts:register' %}">
+                <h1>ساختن اکانت</h1>
+                <p>.از دیدن شما خوشحالم! لطفا با حساب کاربری خود وارد شوید</p>
+                <div class="Input-field">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="email" placeholder="نام خود را وارد کنید..." name="email">
+                </div>
+                <div class="Input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="ایمیل خود را وارد کنید..." name="password1">
+                </div>
+                <div class="Input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="رمز عبور خود را وارد کنید..." name="password2">
+                </div>
+                <button type="submit">ثبت نام</button>
+                <p> ! می توانید با پلتفرم های زیر وارد شوید </p>
+                <div class="Social-icos">
+                    <a href="#" class="icon">
+                        <span>Google</span><i class="fa-brands fa-google"></i>
+                    </a>
+                    
+
+                    <a href="#" class="icon">
+                        <span>Github</span><i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <button class="Btn-Media" id="La">قبلا ثبت نام کرده ام</button>
+            </form>
+        </div>
+        <div class="Form-container Sign-in">
+            <form method="post" action="{% url 'accounts:login' %}">
+                {% csrf_token %}
+                <h1>ورود به حساب کاربری</h1>
+                <br>
+                <p>.از دیدن شما خوشحالم! لطفا با حساب کاربری خود وارد شوید</p>
+                <div class="Input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="ایمیل خود را وارد کنید..." name="username">
+                </div>
+                <div class="Input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="رمز عبور خود را وارد کنید..." name="password">
+                </div>
+                <a href="#">رمز خود را فراموش کرده اید ؟</a>
+                <button>ورود</button>
+                <p> ! می توانید با پلتفرم های زیر وارد شوید </p>
+                <div style="display: flex; gap: 10px;">
+                    <p for="checkbox">مرا به خاطر بسپار</p>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <div class="Social-icos">
+                    <a href="#" class="icon">
+                        <span>Google</span><i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <span>Github</span><i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+                <button class="Btn-Media" id="Re" type="submit">عضویت در وب سایت</button>
+            </form>
+        </div>
+        <div class="Toggle-Container">
+            <div class="Toggle">
+                <div class="Toggle-panel Toggle-left">
+                    <h1>! خوش آمدید</h1>
+                    <p>
+                        !اگر از قبل وارد وبسایت شده اید این پایین کلیک کنید. تجربه بهترین با ما
+                    </p>
+                    <button class="hidden" id="Login">ورود</button>
+                    <img src="{% static 'authentication/Image/p3.png' %}" alt="" width="70%" height="60%" class="img1">
+                </div>
+            </div>
+            <div class="Toggle-panel Toggle-right">
+                <h1>! سلام دوست</h1>
+                <p>
+                    !اگر حسابی ندارید این پایین کلیک کنید. تجربه بهترین ها با ما
+                </p>
+                <button class="hidden" id="register">ثبت نام</button>
+                <img src="{% static 'authentication/Image/p1.png' %}" alt="" width="70%" height="60%" class="img2">
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'authentication/Js/Script.js' %}"></script>
+
+    <!-- JS toasify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    {% include 'messages.html' %}
+
+</body>
+
+</html>
