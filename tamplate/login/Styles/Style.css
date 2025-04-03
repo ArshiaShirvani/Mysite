@@ -1,17 +1,19 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: Vazir;
 }
-body{
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
 }
-.Container{
+
+.Container {
     background-color: #FFF;
     position: relative;
     overflow: hidden;
@@ -19,22 +21,28 @@ body{
     max-width: 100%;
     min-height: 100vh;
 }
-.Container p{
+
+.Container p {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
-.Container span{
-    font-size: 12px;
+
+.Container span {
+    font-size: 18px;
+    position: relative;
+    top: 4px;
 }
-.Container a{
+
+.Container a {
     color: #747474;
     text-decoration: none;
     font-size: 15px;
     margin: 15px 0 10px;
 }
-.Container button{
+
+.Container button {
     background-color: #3cadff;
     color: #fff;
     font-size: 15px;
@@ -51,19 +59,22 @@ body{
     height: 48px;
     transition: all .5s;
 }
-.Container button:hover{
+
+.Container button:hover {
     background-color: #0000;
     border: 1px solid #3cadff;
     color: #acacac;
 }
-.Container button.hidden{
+
+.Container button.hidden {
     background-color: transparent;
-    border-color:#fff ;
+    border-color: #fff;
     max-width: 180px;
     width: 100%;
     color: #fff;
 }
-.Container form{
+
+.Container form {
     background-color: #fff;
     display: flex;
     align-items: center;
@@ -73,47 +84,58 @@ body{
     height: 100%;
 }
 
-.Form-container{
+.Form-container {
     position: absolute;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
 }
-.Sign-in{
+
+.Sign-in {
     left: 0;
     width: 50%;
     z-index: 2;
 }
-.Container.active .Sign-in{
+
+.Container.active .Sign-in {
     transform: translateX(100%);
 }
-.Sign-up{
+
+.Sign-up {
     left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
 }
-.Container.active .Sign-up{
+
+.Container.active .Sign-up {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
-    animation: move 0.6s ;
+    animation: move 0.6s;
 }
+
 @keyframes move {
-    0% , 49.99%{
+
+    0%,
+    49.99% {
         opacity: 0;
         z-index: 1;
     }
-    50% , 100%{
+
+    50%,
+    100% {
         opacity: 1;
         z-index: 5;
     }
 }
-.Social-icos{
+
+.Social-icos {
     margin: 20px 0;
     display: flex;
 }
-.Social-icos a{
+
+.Social-icos a {
     direction: rtl;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -122,24 +144,30 @@ body{
     align-items: center;
     margin: 0 3px;
     width: 210px;
-    height: 48px;
-    font-size: 16px;
-    transition:all .5s;
+    height: 58px;
+    font-size: 20px;
+    transition: all .5s;
 }
- a:hover{
+
+a:hover {
     color: #3cadff;
 }
-.Social-icos a:nth-child(1):hover{
-    border: 1px solid #000;
-    color: #000;
+
+.Social-icos a:nth-child(1):hover {
+    border: 1px solid #e03b2f; /* آبی گوگل */
+    background-color: #e03b2f; /* آبی گوگل */
+    color: #fff; /* تغییر رنگ متن و آیکون به سفید */
     transform: scale(1.01);
 }
-.Social-icos a:nth-child(2):hover{
-    border: 1px solid #000;
-    color: #000;
+
+.Social-icos a:nth-child(2):hover {
+    border: 1px solid #000; /* آبی گوگل */
+    background-color: #000; /* آبی گوگل */
+    color: #fff;
     transform: scale(1.01);
 }
-.Toggle-Container{
+
+.Toggle-Container {
     position: absolute;
     top: 0;
     left: 50%;
@@ -150,10 +178,12 @@ body{
     z-index: 1000;
 
 }
-.Container.active .Toggle-Container{
+
+.Container.active .Toggle-Container {
     transform: translateX(-100%);
 }
-.Toggle{
+
+.Toggle {
     background-color: #3cadff;
     height: 100%;
     color: #fff;
@@ -162,12 +192,14 @@ body{
     width: 200%;
     transform: translateX(0);
     transition: all 0.6 ease-in-out;
-   
+
 }
-.Container.active .Toggle{
+
+.Container.active .Toggle {
     transform: translateX(50%);
 }
-.Toggle-panel{
+
+.Toggle-panel {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -181,35 +213,43 @@ body{
     transform: translateX(0);
     transition: all 0.6 ease-in-out;
 }
-.Toggle-left{
+
+.Toggle-left {
     transform: translateX(-200%);
-    
+
 }
-.Container.active .Toggle-left{
+
+.Container.active .Toggle-left {
     transform: translateX(0);
 }
-.Toggle-right{
+
+.Toggle-right {
     right: 0;
     transform: translateX(0);
     color: #fff;
-    width:100% ;
+    width: 100%;
     display: flex;
 
 }
-.Container.active .Toggle-right{
+
+.Container.active .Toggle-right {
     transform: translateX(200%);
 }
-.Container.active .img1{
+
+.Container.active .img1 {
     opacity: 1;
 }
-.Container.active .img2{
+
+.Container.active .img2 {
     opacity: 0;
 }
-form p{
-    font-size: 15px;
+
+form p {
+    font-size: 19px;
     color: #747474;
 }
-.Input-field{
+
+.Input-field {
     direction: rtl;
     max-width: 450px;
     width: 100%;
@@ -221,13 +261,15 @@ form p{
     grid-template-columns: 15% 85%;
     padding: 0 .4rem;
 }
-.Input-field i{
+
+.Input-field i {
     text-align: center;
     align-content: center;
     color: #acacac;
     font-size: 1.1rem;
 }
-.Input-field input{
+
+.Input-field input {
     background: none;
     outline: none;
     border: none;
@@ -236,41 +278,52 @@ form p{
     font-size: .99rem;
     color: #333;
 }
-.Input-field input::placeholder{
+
+.Input-field input::placeholder {
     color: #aaa;
     font-weight: 500;
 }
-.Btn-Media{
+
+.Btn-Media {
     display: none;
 }
-img{
-    
-    width:'70%';
-    height:'60%';
-    transition:opacity 1s ease-in-out ;
+
+img {
+
+    width: '70%';
+    height: '60%';
+    transition: opacity 1s ease-in-out;
 }
-.img1{
+
+.img1 {
     opacity: 0;
 }
-.img2{
+
+.img2 {
     opacity: 1;
 }
+
 @media only screen and (max-width: 1180px) {
+
     /* تنظیمات کلی برای نمایش عمودی در موبایل */
-    form p{
+    form p {
         text-align: center;
     }
-    form h1{
+
+    form h1 {
         font-size: 22px;
     }
+
     .Container {
         flex-direction: column;
         height: 100vh;
         justify-content: center;
     }
-    .Btn-Media{
+
+    .Btn-Media {
         display: block;
     }
+
     /* فرم‌ها روی هم قرار بگیرند */
     .Form-container {
         width: 100%;
