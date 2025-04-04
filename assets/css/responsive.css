@@ -74,6 +74,9 @@
 .Show-menu.active {
     max-height: 85vh;
 }
+.Show-login.active {
+    max-height: 85vh;
+}
 .btn{
     width: 18%;
     background-color: #ccc;

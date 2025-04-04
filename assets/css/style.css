@@ -27,6 +27,7 @@
 
 body {
     transition: all 0.3s, color 0.3s;
+    overflow-x: hidden;
 }
 
 .dark-theme {
@@ -141,6 +142,18 @@ button i {
     height: 45px;
 }
 
+.contaner-btn .user {
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+    padding: 8px 18px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    height: 45px;
+}
+
 .login a {
     text-decoration: none;
     color: var(--primary-color);
@@ -158,6 +171,46 @@ button i {
 .burger,
 .Show-menu {
     display: none;
+}
+
+.Show-login {
+    opacity: 0;
+    background: #ddd;
+    width: 250px;
+    height: 140px;
+    position: absolute;
+    left: 40px;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    border-radius: 10px;
+    transition: opacity .5s;
+    padding: 10px;
+    z-index: 1;
+    box-shadow: 0px 0px 15px 0px #ddd;
+}
+hr{
+    background-color: #ccc;
+    margin:10px 0px ;
+}
+.Show-login a{
+    width: 100%;
+    height: 25%;
+    border-radius: 10px;
+    font-size: 13px;
+    align-content: center;
+    padding:0px 5px ;
+    color: #333;
+}
+.Show-login .pro:hover{
+    background-color: #006cbe80;
+}
+.Show-login .out:hover{
+    background-color: #be000080;
+}
+.active-show{
+    opacity: 1;
 }
 
 .container-re {
@@ -191,12 +244,14 @@ button i {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 0;
 }
 
 .border-r1 {
     width: 600px;
     height: 600px;
     border-top: 5px solid transparent;
+
 }
 
 .border-r2 {
@@ -274,6 +329,7 @@ button i {
 .cont-4 image img {
     width: 100px;
     height: 100px;
+    position: relative;
 }
 
 p {
@@ -298,7 +354,7 @@ p {
 
 .logo-light {
     display: block;
-    
+
 }
 
 .content-container {
@@ -321,7 +377,7 @@ p {
     align-content: center;
     padding: 40px;
     transform: translateX(250%);
-    transition:transform 2s ease ;
+    transition: transform 2s ease;
 }
 
 .right-content {
@@ -331,20 +387,25 @@ p {
     align-items: center;
     padding: 10px 40px;
     transform: translateX(-250%);
-    transition:transform 2s ease ;
+    transition: transform 2s ease;
 }
-.show{
+
+.show {
     transform: translateX(0%);
 }
-.box-left:nth-child(even){
+
+.box-left:nth-child(even) {
     transform: translateX(150%);
 }
-.box-right:nth-child(even){
+
+.box-right:nth-child(even) {
     transform: translateX(150%);
 }
-.show:nth-child(even){
+
+.show:nth-child(even) {
     transform: translateX(0);
 }
+
 .r2 {
     justify-content: start;
 }
@@ -514,6 +575,7 @@ p {
     cursor: pointer;
     animation: big 3s linear infinite;
 }
+
 @keyframes big {
     0% {
         transform: scale(1);
@@ -623,11 +685,13 @@ footer {
     border-top: 2px solid #ddd;
     margin-top: 20px;
 }
-span{
-    padding:1px;
+
+span {
+    padding: 1px;
 }
 
 @media only screen and (max-width: 1500px) {
+
     .blog-left {
         display: none;
     }
@@ -665,15 +729,20 @@ span{
 }
 
 @media only screen and (max-width: 1250px) {
-  
+    .contaner-btn .user{
+        background-color: white;
+    }
+
     .container {
         align-items: center;
         flex-direction: column;
     }
-    .footer-bottom{
+
+    .footer-bottom {
         align-items: center;
         flex-direction: column;
     }
+
     .newsletter-content {
         flex-direction: column-reverse;
         align-items: center;
@@ -805,32 +874,44 @@ span{
 
 
 @media only screen and (max-width: 768px) {
-    .login p{
+    .Show-login {
+        left: 15px;
+    }
+
+    .login p {
         display: none;
     }
-    .newsletter-content{
+
+    .newsletter-content {
         padding: 10px 0px;
         height: 300px;
     }
-    .input-email{
+
+    .input-email {
         width: 70%;
     }
-    .newsletter-button{
+
+    .newsletter-button {
         width: 30%;
     }
+
     .header {
         height: 10vh;
         padding: 5px 15px;
     }
-    .data-blog{
+
+    .data-blog {
         display: none;
     }
-    .link-blog{
+
+    .link-blog {
         width: 100%;
     }
+
     .blog {
         margin: auto;
     }
+
     .in-part {
         margin: 20px 0px;
     }
@@ -874,9 +955,11 @@ span{
     .contaner-btn .login a {
         font-size: 12px;
     }
-    .login i{
+
+    .login i {
         font-size: 25px;
     }
+
     .swiper-slide img {
         height: 150px;
     }
