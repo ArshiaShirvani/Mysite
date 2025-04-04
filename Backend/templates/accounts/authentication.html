@@ -21,19 +21,20 @@
     <div class="Container" id="Container">
         <div class="Form-container Sign-up">
             <form method="post" action="{% url 'accounts:register' %}">
+                {% csrf_token %}
                 <h1>ساختن اکانت</h1>
                 <p>.از دیدن شما خوشحالم! لطفا با حساب کاربری خود وارد شوید</p>
                 <div class="Input-field">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="email" placeholder="نام خود را وارد کنید..." name="email">
-                </div>
-                <div class="Input-field">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" placeholder="ایمیل خود را وارد کنید..." name="password1">
+                    <input type="email" placeholder="ایمیل خود را وارد کنید..." name="email">
                 </div>
                 <div class="Input-field">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="رمز عبور خود را وارد کنید..." name="password2">
+                    <input type="password" placeholder="رمز عبور خود را وارد کنید..." name="password1">
+                </div>
+                <div class="Input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="مجدد رمز عبور خود را وارد کنید..." name="password2">
                 </div>
                 <button type="submit">ثبت نام</button>
                 <p> ! می توانید با پلتفرم های زیر وارد شوید </p>
@@ -65,7 +66,7 @@
                     <input type="password" placeholder="رمز عبور خود را وارد کنید..." name="password">
                 </div>
                 <a href="#">رمز خود را فراموش کرده اید ؟</a>
-                <button>ورود</button>
+                <button type="submit">ورود</button>
                 <p> ! می توانید با پلتفرم های زیر وارد شوید </p>
                 <div style="display: flex; gap: 10px;">
                     <p for="checkbox">مرا به خاطر بسپار</p>
@@ -79,7 +80,7 @@
                         <span>Github</span><i class="fa-brands fa-github"></i>
                     </a>
                 </div>
-                <button class="Btn-Media" id="Re" type="submit">عضویت در وب سایت</button>
+                <button class="Btn-Media" id="Re">عضویت در وب سایت</button>
             </form>
         </div>
         <div class="Toggle-Container">
