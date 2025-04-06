@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    
+    'accounts',
     'website',
     
 ]
@@ -67,6 +67,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'core.context_processors.user_profile',
             ],
         },
     },
@@ -81,7 +82,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('PGDB_NAME',default='postgres'),
+        'NAME': config('PGDB_NAME',default='mysitedb'),
         'USER': config('PGDB_USER',default='postgres'),
         'PASSWORD': config('PGDB_PASSWORD',default='arshia34527259'),
         'HOST': config('PGDB_HOST',default='localhost'),
@@ -139,3 +140,13 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# account settings
+AUTH_USER_MODEL = 'accounts.User'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',  # احراز هویت پیش‌فرض
+]
