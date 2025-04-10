@@ -85,7 +85,7 @@
         </div>
         <!-- دیو با عرض بزرگ -->
         <div
-            class="w-full rounded-lg bg-[#c0c0c0] p-6 lg:w-3/5 h-[500px] flex flex-col">
+            class="w-full rounded-lg bg-[#c0c0c0] p-6 lg:w-3/5 flex flex-col ">
             <form action="">
                 <div class="">
                     <h1>با من در ارتباط باشید</h1>
@@ -93,18 +93,18 @@
                     <p>می تونید سوالات و نظرات و درخواست هاتون رو از طریق این فرم با من مطرح کنین</p>
                     <br>
                 </div>
-                <div class="w-full flex bg-white  my-2 text-5xl ">
-                    <input type="text" name="" placeholder="نام و نام خانوادگی" class="w-1/2 p-4">
-                    <input type="text" name="" placeholder="عنوان" class="w-1/2 p-4">
+                <div class="w-full flex  text-5xl flex-col lg:flex-row justify-between">
+                    <input type="text" name="" placeholder="نام و نام خانوادگی" class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                    <input type="text" name="" placeholder="عنوان" class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
                 </div>
-                <div class="w-full flex bg-white h-14 my-2">
-                    <input type="text" name="" placeholder="ایمیل" class="w-1/2 p-4">
-                    <input type="text" name="" placeholder="شماره همراه" class="w-1/2 p-4">
+                <div class="w-full flex  flex-col lg:flex-row justify-between">
+                    <input type="text" name="" placeholder="ایمیل" class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                    <input type="text" name="" placeholder="شماره همراه" class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
                 </div>
-                <div class="">
-                    <textarea id="description" placeholder="متن درخواست شده" name="description" class="resize-none w-full h-[150px] p-3  placeholder-[#717171] placeholder:text-sm"></textarea>
+                <div class="mt-2 lg:mt-2">
+                    <textarea id="description" placeholder="متن درخواست شده" name="description" class="rounded-lg resize-none w-full h-[150px] p-3  placeholder-[#717171] placeholder:text-sm"></textarea>
                 </div>
-                <div class="">
+                <div class="mt-2">
                     <input type="submit" class="bg-[#0d1d2b] rounded-lg text-white h-12">
                 </div>
             </form>
