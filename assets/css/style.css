@@ -728,12 +728,20 @@ span {
     }
 }
 .in input{
+    border: 2px solid #0000;
     transition: all .3s;
 }
 .in input:hover{
-    transform: scale(1.015);
+    border: 2px solid;
 }
-
+.area textarea{
+    border: 2px solid #0000;
+    transition: all .3s;
+}
+.area textarea:hover{
+    outline: none;
+    border: 2px solid #6a6a6a;
+}
 @media only screen and (max-width: 1250px) {
     .contaner-btn .user{
         background-color: white;
