@@ -727,6 +727,12 @@ span {
         height: 520px;
     }
 }
+.in input{
+    transition: all .3s;
+}
+.in input:hover{
+    transform: scale(1.015);
+}
 
 @media only screen and (max-width: 1250px) {
     .contaner-btn .user{
