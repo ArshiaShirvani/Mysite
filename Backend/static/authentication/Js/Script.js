@@ -21,3 +21,16 @@ La.addEventListener("click", (event) => {
     event.preventDefault(); 
     container.classList.remove("active");
 });
+const forget = document.querySelector('.forget');
+const show = document.querySelector('#show');
+console.log(show);
+document.querySelector('#btn-click').addEventListener('click',()=>{
+    forget.style.display='none';
+});
+document.querySelector('.on').addEventListener('click' ,() => {
+    forget.style.display='none';
+});
+
+document.querySelector('#show').addEventListener('click' ,() => {
+    forget.style.display='block';
+});
