@@ -18,3 +18,11 @@ class UserRegisterForm(UserCreationForm):
             "password1",
             "password2",
         )
+        
+class PasswordResetRequestForm(forms.Form):
+    email = forms.EmailField(label="Enter Your Email", max_length=254)
+    
+    
+class SetNewPasswordForm(forms.Form):
+    new_password = forms.CharField(label="New Password", widget=forms.PasswordInput)
+    confirm_password = forms.CharField(label="Confirm Password", widget=forms.PasswordInput)
