@@ -3,7 +3,7 @@ const BoxRight = document.querySelectorAll('.right-content');
 
 window.addEventListener('scroll',showbox);
 function showbox() {
-    const btn = window.innerHeight / 1;
+    const btn = window.innerHeight / 1.2;
     
     BoxLeft.forEach(left => {
         const boxTop = left.getBoundingClientRect().top;

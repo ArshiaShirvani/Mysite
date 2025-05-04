@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@latest/index.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .in input{
+            border: 1px solid #ddd;
+            transition: border-color 0.3s ease;
+        }
+       
+        .in textarea{
+            border: 1px solid #ddd;
+        }
+        .in input:hover{
+            border: 1px solid #353535;
+        }
+        .in textarea:hover{
+            border: 1px solid #353535;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -25,7 +42,7 @@
                     <li><a href="blog.html">وبلاگ</a></li>
                     <li><a href="library.html">کتابخانه</a></li>
                     <li><a href="about.html">درباره من</a></li>
-                    <li><a href="contact.html">تماس با من</a></li>
+                    <li><a href="contact.html"  class="active-link">تماس با من</a></li>
                 </ul>
             </nav>
 
@@ -73,15 +90,14 @@
     </div>
     <div class="flex flex-col gap-5 max-w-[1350px] m-auto lg:flex-row" dir="rtl">
         <!-- دیو با عرض کوچک -->
-        <div class="w-full flex  justify-center text-white text-xl font-bold lg:w-2/5">
+        <div class="w-full flex  justify-center text-white text-xl font-bold lg:w-2/5 border rounded-lg">
             <div
-                class=" bg-[#c0c0c0]  text-white p-6 rounded-lg shadow flex flex-col justify-center gap-4 w-full p-[60px] lg:p-[20px]">
-                <img src="../assets/img/efhd.svg" alt="">
+                class="  text-white p-6 rounded-lg shadow flex flex-col justify-center gap-4 w-full p-[60px] lg:p-[20px]">
+                <img src="../assets/img/contact.svg" alt="" class="h-[450px]">
             </div>
         </div>
         <!-- دیو با عرض بزرگ -->
-        <div
-            class="w-full rounded-lg bg-[#c0c0c0] p-6 lg:w-3/5 flex flex-col ">
+        <div class="w-full rounded-lg  p-6 lg:w-3/5 flex flex-col border rounded-lg">
             <form action="">
                 <div class="">
                     <h1>با من در ارتباط باشید</h1>
@@ -89,19 +105,24 @@
                     <p>می تونید سوالات و نظرات و درخواست هاتون رو از طریق این فرم با من مطرح کنین</p>
                     <br>
                 </div>
-                <div class="in w-full flex  text-5xl flex-col lg:flex-row justify-between">
-                    <input type="text" name="" placeholder="نام و نام خانوادگی" class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
-                    <input type="text" name="" placeholder="عنوان" class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                <div class="in w-full flex  text-5xl flex-col lg:flex-row justify-between ">
+                    <input type="text" name="" placeholder="نام و نام خانوادگی"
+                        class=" w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg ">
+                    <input type="text" name="" placeholder="عنوان"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
                 </div>
                 <div class="in w-full flex  flex-col lg:flex-row justify-between">
-                    <input type="text" name="" placeholder="ایمیل" class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
-                    <input type="text" name="" placeholder="شماره همراه" class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                    <input type="text" name="" placeholder="ایمیل"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                    <input type="text" name="" placeholder="شماره همراه"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
                 </div>
-                <div class="mt-2 lg:mt-2 area">
-                    <textarea id="description" placeholder="متن درخواست شده" name="description" class="rounded-lg resize-none w-full h-[150px] p-3  placeholder-[#717171] placeholder:text-sm"></textarea>
+                <div class="in mt-2 lg:mt-2 area">
+                    <textarea id="description" placeholder="متن درخواست شده" name="description"
+                        class=" rounded-lg resize-none w-full h-[150px] p-3  placeholder-[#717171] placeholder:text-sm"></textarea>
                 </div>
                 <div class="mt-2">
-                    <input type="submit" class="bg-[#0d1d2b] rounded-lg text-white h-12 atn">
+                    <input type="submit" class=" bg-[#0d1d2b] rounded-lg text-white h-12 atn">
                 </div>
             </form>
         </div>
