@@ -28,6 +28,7 @@
 body {
     transition: all 0.3s, color 0.3s;
     overflow-x: hidden;
+  
 }
 .active-link{
     color: #2e8ffd;
