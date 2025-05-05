@@ -23,16 +23,19 @@
     padding: 0;
     font-family: Vazir;
     text-decoration: none;
+
 }
 
 body {
     transition: all 0.3s, color 0.3s;
     overflow-x: hidden;
-  
+
 }
-.active-link{
+
+.active-link {
     color: #2e8ffd;
 }
+
 .dark-theme {
     background: #121212;
     color: #ffffff;
@@ -182,7 +185,7 @@ button i {
     width: 250px;
     height: 140px;
     position: absolute;
-    left: 75px;
+    left: 90px;
     top: 85px;
     display: flex;
     flex-direction: column;
@@ -191,39 +194,45 @@ button i {
     transition: opacity .5s;
     padding: 10px;
     z-index: 1;
-    box-shadow: 0px 0px 15px 5px #ddd;
+    box-shadow: 0px 0px 10px 0px #ddd;
 }
-hr{
+
+hr {
     background-color: #ccc;
-    margin:10px 0px ;
+    margin: 10px 0px;
 }
-h5{
+
+h5 {
     font-size: 14px;
     color: #333;
 }
-h6{
+
+h6 {
     margin-top: 5px;
     font-size: 13px;
     color: #333;
 }
-.Show-login a{
+
+.Show-login a {
     width: 100%;
     height: 25%;
     border-radius: 3px;
     font-size: 14px;
     align-content: center;
-    padding:0px 5px ;
+    padding: 0px 5px;
     color: #333;
     transition: all .5s;
 }
 
-.Show-login .pro:hover{
+.Show-login .pro:hover {
     background-color: #006cbe80;
 }
-.Show-login .out:hover{
+
+.Show-login .out:hover {
     background-color: #be000080;
 }
-.active-show{
+
+.active-show {
     opacity: 1;
 }
 
@@ -741,23 +750,28 @@ span {
         height: 520px;
     }
 }
-.in input{
+
+.in input {
     border: 2px solid #0000;
     transition: all .3s;
 }
-.in input:hover{
+
+.in input:hover {
     border: 2px solid;
 }
-.area textarea{
+
+.area textarea {
     border: 2px solid #0000;
     transition: all .3s;
 }
-.area textarea:hover{
+
+.area textarea:hover {
     outline: none;
     border: 2px solid #6a6a6a;
 }
+
 @media only screen and (max-width: 1250px) {
-    .contaner-btn .user{
+    .contaner-btn .user {
         background-color: white;
     }
 
@@ -902,8 +916,13 @@ span {
 
 
 @media only screen and (max-width: 768px) {
+
+    .newsletter-content {
+        border-radius: 10px;
+    }
+
     .Show-login {
-        left: 15px;
+        left: 27px;
     }
 
     .login p {
