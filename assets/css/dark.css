@@ -54,6 +54,15 @@ html.dark .newsletter-content {
 /* فرم جستجو */
 html.dark input[type="text"],
 html.dark input[type="email"] {
+    color: black;
+}
+html.dark textarea{
+    color: black;
+}
+html.dark .search input[type="text"]{
+    color: white;
+}
+html.dark .search-res input[type="text"]{
     color: white;
 }
 html.dark .custom-slider{
