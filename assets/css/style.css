@@ -918,7 +918,13 @@ span {
 
 
 @media only screen and (max-width: 768px) {
-
+    .left-newsletter{
+        padding: 15px;
+    }
+    .input-content{
+        padding: 0px;
+        height: 50px;
+    }
     .newsletter-content {
         border-radius: 10px;
     }
