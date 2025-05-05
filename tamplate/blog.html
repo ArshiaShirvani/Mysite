@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/fonts.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sizebody.css">
+    <link rel="stylesheet" href="../assets/css/dark.css">
     <link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@latest/index.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -81,20 +82,20 @@
     <div class="flex flex-col gap-5 max-w-[1350px] m-auto lg:flex-row" dir="rtl">
         <!-- دیو با عرض بزرگ -->
         <div
-            class="w-full rounded-lg border flex items-center justify-start text-white text-xl font-bold p-8 flex-wrap gap-8 lg:w-2/3">
-            <div class="bg-white text-black p-4 rounded-lg shadow flex flex-col gap-2 w-full">
+            class=" w-full rounded-lg border flex items-center justify-start text-white text-xl font-bold p-8 flex-wrap gap-8 lg:w-2/3">
+            <div class="searchblog bg-white text-black p-4 rounded-lg shadow flex flex-col gap-2 w-[99%]">
                 <form action="" class="flex justify-between gap-4">
 
                     <!-- فیلد جستجو -->
-                    <div class="border border-gray-300 rounded-[5px] flex justify-center items-center px-2 py-1 w-2/3">
+                    <div class="border  rounded-[5px] flex justify-center items-center px-2 py-1 w-2/3">
                         <input type="text" placeholder="جستجو" class="p-1 placeholder:text-[15px]">
                         <i class="fa-solid fa-magnifying-glass text-gray-500"></i>
                     </div>
 
                     <!-- فیلد سلکت با فلش سفارشی -->
-                    <div class="relative w-1/3">
+                    <div class="relative w-1/3 ">
                         <select
-                            class="appearance-none border border-gray-300 p-2 rounded-[5px] w-full text-gray-500 text-[15px]">
+                            class="appearance-none border border-gray-300 p-2 rounded-[5px] w-full text-gray-500 text-[15px] bg-none">
                             <option value="0">انتخاب :</option>
                             <option value="1">Audi</option>
                             <option value="2">BMW</option>
@@ -118,8 +119,8 @@
             </div>
             
 
-            <div class="w-full bg-white text-black p-4 rounded-lg shadow flex flex-col gap-2 border  xl:w-[47.5%] ">
-                <img src="../assets/img/bl2.webp" class="w-full  object-cover rounded" alt="خبر">
+            <div class="cardblog w-full bg-white text-black p-4 rounded-lg shadow flex flex-col gap-2 border  xl:w-[47.5%] ">
+                <img src="../assets/img/bl2.webp" class="w-full  object-cover rounded-lg" alt="خبر">
                 <h3 class="font-bold text-lg">سر تیتر خبر</h3>
                 <a href="Viewblog.html"><p class="text-sm text-gray-600">توضیحات مختصر درباره خبر مورد نظر که جزئیات را بیان می‌کند.</p></a>
                 <div class="flex justify-between items-center text-xs text-gray-500 mt-2">
@@ -131,8 +132,8 @@
                     </span>
                 </div>
             </div>
-            <div class="w-full bg-white text-black p-4 rounded-lg shadow flex flex-col gap-2 border  xl:w-[47.5%] ">
-                <img src="../assets/img/bl1.webp" class="w-full  object-cover rounded" alt="خبر">
+            <div class="cardblog  w-full bg-white text-black p-4 rounded-lg shadow flex flex-col gap-2 border  xl:w-[47.5%] ">
+                <img src="../assets/img/bl1.webp" class="w-full  object-cover rounded-lg" alt="خبر">
                 <h3 class="font-bold text-lg">سر تیتر خبر</h3>
                 <a href="Viewblog.html"><p class="text-sm text-gray-600">توضیحات مختصر درباره خبر مورد نظر که جزئیات را بیان می‌کند.</p></a>
                 <div class="flex justify-between items-center text-xs text-gray-500 mt-2">
@@ -232,6 +233,7 @@
     </div>
     </div>
     <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/dark.js"></script>
 </body>
 
 </html>

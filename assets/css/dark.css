@@ -3,9 +3,10 @@ html.dark body {
     background-color: #1e1e1e;
     color: white;
 }
-
-* {
-    border-radius: 10px;
+html.dark .cardblog,
+html.dark .cardbook{
+    background-color: #2a2a2a;
+    box-shadow: 0 0 10px 0;
 }
 
 /* عناصر متنی عمومی */
@@ -32,7 +33,11 @@ html.dark footer {
     background-color: #1e1e1e;
     color: white;
 }
-.html.dark 
+html.dark .search{
+    background-color: #2a2a2a;
+    border: .5px solid #3a3a3a;
+
+}
 html.dark footer a {
     color: #90caf9;
 }
@@ -53,15 +58,14 @@ html.dark .newsletter-content {
 /* فرم جستجو */
 html.dark input[type="text"],
 html.dark input[type="email"] {
-    outline: none;
     color: white;
-    border: 1px solid white;
 }
 html.dark .custom-slider{
     box-shadow: 0px 0px 10px 0px;
    
 }
 /* دکمه‌ها */
+html.dark .login,
 html.dark .in-part,
 html.dark .user,
 html.dark button,
