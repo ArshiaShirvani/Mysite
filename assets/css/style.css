@@ -182,8 +182,8 @@ button i {
     width: 250px;
     height: 140px;
     position: absolute;
-    left: 40px;
-    top: 75px;
+    left: 75px;
+    top: 85px;
     display: flex;
     flex-direction: column;
     justify-content: right;

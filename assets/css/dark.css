@@ -1,0 +1,134 @@
+/* حالت پایه برای حالت تاریک */
+html.dark body {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+* {
+    border-radius: 10px;
+}
+
+/* عناصر متنی عمومی */
+html.dark p,
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6,
+html.dark li,
+html.dark span,
+html.dark a {
+    color: white !important;
+}
+
+/* لینک‌ها */
+html.dark a {
+    color: #90caf9 !important;
+}
+
+/* فوتر */
+html.dark footer {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+html.dark footer a {
+    color: #90caf9;
+}
+
+html.dark .footer-bottom {
+    border-top: 1px solid #444;
+    color: #aaa;
+}
+
+/* بخش‌های مشخص‌شده */
+html.dark .container-re,
+html.dark .content-container,
+html.dark .blog-container,
+html.dark .newsletter-content {
+    background-color: #1e1e1e;
+}
+
+/* فرم جستجو */
+html.dark input[type="text"],
+html.dark input[type="email"] {
+    outline: none;
+    color: white;
+    border: 1px solid white;
+}
+html.dark .custom-slider{
+    box-shadow: 0px 0px 10px 0px;
+   
+}
+/* دکمه‌ها */
+html.dark .in-part,
+html.dark .user,
+html.dark button,
+html.dark .btn,
+html.dark .newsletter-button {
+    background-color: #2a2a2a;
+
+}
+
+html.dark button:hover,
+html.dark .btn:hover,
+html.dark .newsletter-button:hover {
+    background-color: #3a3a3a;
+}
+
+/* کارت‌های وبلاگ */
+html.dark .blog-content {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+/* navbar همیشه سفید باقی بماند */
+header,
+html.dark header {
+    background-color: white;
+    color: black;
+}
+
+/* لوگو‌ها */
+.logo-dark {
+    display: none;
+}
+
+.dark .logo-dark {
+    display: block;
+}
+
+.dark .logo-light {
+    display: none;
+}
+
+/* آیکون‌ها */
+html.dark i {
+    color: white;
+}
+
+/* منوی موبایل */
+html.dark .Show-menu {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* جعبه نمایش اطلاعات کاربر */
+html.dark .Show-login {
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* اسلایدر */
+html.dark .custom-slider {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* تکنولوژی‌ها */
+html.dark .direction-slider {
+    background-color: #1e1e1e;
+    color: white;
+}
