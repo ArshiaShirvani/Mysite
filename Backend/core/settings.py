@@ -39,8 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'taggit',
+    
     'accounts',
     'website',
+    'blog',
+    'library',
     
 ]
 
@@ -150,3 +154,13 @@ LOGOUT_REDIRECT_URL = '/'
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',  # احراز هویت پیش‌فرض
 ]
+
+# email settings
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'arshiadjango@gmail.com'
+EMAIL_HOST_PASSWORD = 'haweixdcxsojzsoa'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
