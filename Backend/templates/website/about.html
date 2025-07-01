@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block extra_css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@latest/index.css" rel="stylesheet">
+    <style>
+        .in i{
+        margin: 14px 12px;
+       }
+    </style>
+    {% endblock extra_css %}
+
+    {% block content %}
+    <div class="flex flex-col text-center gap-5 max-w-[1350px] w-full  m-auto py-12" dir="rtl">
+        <h1 class="text-5xl">درباره من</h1>
+        <p  class="text-[13px]">صفحه اصلی / درباره من</p>
+    </div>
+    <div class="flex flex-col gap-5 max-w-[1350px] m-auto lg:flex-row" dir="rtl">
+        <!-- دیو با عرض کوچک -->
+        <div class="w-full flex  justify-center text-white text-xl font-bold lg:w-2/5 border rounded-lg">
+            <div
+                class="  text-white p-6 rounded-lg shadow flex flex-col justify-center gap-4 w-full p-[60px] lg:p-[20px]">
+                <img src="{% static 'assets/img/about_us1.webp' %}" alt="" class="h-[300px]">
+            </div>
+        </div>
+        <!-- دیو با عرض بزرگ -->
+        <div class="w-full rounded-lg  p-6 lg:w-3/5 flex flex-col border rounded-lg">
+            <form action="">
+                <div class="">
+                    <h1>با من در ارتباط باشید</h1>
+                    <br>
+                    <p>می تونید سوالات و نظرات و درخواست هاتون رو از طریق این فرم با من مطرح کنین</p>
+                    <br>
+                </div>
+                <div class="in w-full flex  text-[15px] flex-col lg:justify-center ">
+                    <p>برای نقش کارشناس پذیرش باید به‌خوبی و به طور خلاصه مهارت‌ها و دانش لازم را بیان کنید. این معرفی
+                        شامل مروری بر محیط‌ها و تجربیاتی که
+                    </p>
+                </div>
+                <br>
+                <div class="in w-full flex text-[15px] flex-col lg:justify-center">
+                    <p> مهارت‌های اصلی که می‌توانید در بخش مهارت‌های رزومه یا «درباره من» به آن اشاره کنید.</p>
+                    <br>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  نگارش و اصلاح گزارش</p>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  ساخت و به‌رزورسانی اکانت‌ها</p>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  سیستم‌های مدیریت اطلاعات</p>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  ارتباطات شفاهی و مکتوب</p>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  فرآیندها و مقررات دفتر کار</p>
+                </div>
+                <br>
+                <div class="in mt-2 lg:mt-2 area">
+                    <p>برای این نقش باید روابط اجتماعی و همدلی خود و دانش محصول و فروش خود را به‌خوبی بیان کنید.</p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="flex flex-col gap-5 max-w-[1350px] m-auto lg:flex-row" dir="rtl">
+      
+        <!-- دیو با عرض بزرگ -->
+        <div class="w-full rounded-lg  p-6 lg:w-3/5 flex flex-col border rounded-lg">
+            <form action="">
+                <div class="">
+                    <h1>با من در ارتباط باشید</h1>
+                    <br>
+                    <p>می تونید سوالات و نظرات و درخواست هاتون رو از طریق این فرم با من مطرح کنین</p>
+                    <br>
+                </div>
+                <div class="in w-full flex  text-[15px] flex-col lg:justify-center ">
+                    <p>برای نقش کارشناس پذیرش باید به‌خوبی و به طور خلاصه مهارت‌ها و دانش لازم را بیان کنید. این معرفی
+                        شامل مروری بر محیط‌ها و تجربیاتی که
+                    </p>
+                </div>
+                <br>
+                <div class="in w-full flex text-[15px] flex-col lg:justify-center">
+                    <p> مهارت‌های اصلی که می‌توانید در بخش مهارت‌های رزومه یا «درباره من» به آن اشاره کنید.</p>
+                    <br>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  نگارش و اصلاح گزارش</p>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  ساخت و به‌رزورسانی اکانت‌ها</p>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  سیستم‌های مدیریت اطلاعات</p>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  ارتباطات شفاهی و مکتوب</p>
+                    <p><i class="fa-solid fa-circle text-[8px]"></i>  فرآیندها و مقررات دفتر کار</p>
+                </div>
+                <br>
+                <div class="in mt-2 lg:mt-2 area">
+                    <p>برای این نقش باید روابط اجتماعی و همدلی خود و دانش محصول و فروش خود را به‌خوبی بیان کنید.</p>
+                </div>
+
+            </form>
+        </div>
+          <!-- دیو با عرض کوچک -->
+          <div class="w-full flex  justify-center text-white text-xl font-bold lg:w-2/5 border rounded-lg">
+            <div
+                class="  text-white p-6 rounded-lg shadow flex flex-col justify-center gap-4 w-full p-[60px] lg:p-[20px]">
+                <img src="{% static 'assets/img/about_us2.webp' %}" alt="" class="h-[300px]">
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col text-center gap-5 max-w-[1350px] w-full  m-auto p-5" dir="rtl">
+    </div>
+    
+    <br>
+    {% block extra_js %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    {% endblock extra_js %}
+{% endblock %}
