@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@latest/index.css" rel="stylesheet">
+
+    <style>
+        html.dark p {
+            color: rgb(0, 0, 0);
+        }
+        .in input{
+            border: 1px solid #ddd;
+            transition: border-color 0.3s ease;
+        }
+       
+        .in textarea{
+            border: 1px solid #ddd;
+        }
+        .in input:hover{
+            border: 1px solid #353535;
+        }
+        .in textarea:hover{
+            border: 1px solid #353535;
+        }
+    </style>
+    {% endblock extra_css %}
+    
+{% block content %}
+    <div class="flex flex-col text-center gap-5 max-w-[1350px] w-full  m-auto py-12" dir="rtl">
+        <h1 class="text-5xl">تماس با من</h1>
+        <p class="text-[13px]">صفحه اصلی / تماس با ما</p>
+    </div>
+    <div class="flex flex-col gap-5 max-w-[1350px] m-auto lg:flex-row" dir="rtl">
+        <!-- دیو با عرض کوچک -->
+        <div class="w-full flex  justify-center text-white text-xl font-bold lg:w-2/5 border rounded-lg">
+            <div
+                class="  text-white p-6 rounded-lg shadow flex flex-col justify-center gap-4 w-full p-[60px] lg:p-[20px]">
+                <img src="{% static 'assets/img/contact.svg' %}" alt="" class="h-[450px]">
+            </div>
+        </div>
+        <!-- دیو با عرض بزرگ -->
+        <div class="w-full rounded-lg  p-6 lg:w-3/5 flex flex-col border rounded-lg">
+            <form action="{% url 'website:contact' %}" method="post">
+                {% csrf_token %}
+                <div class="">
+                    <h1>با من در ارتباط باشید</h1>
+                    <br>
+                    <p>می تونید سوالات و نظرات و درخواست هاتون رو از طریق این فرم با من مطرح کنین</p>
+                    <br>
+                </div>
+                <div class="in w-full flex  text-5xl flex-col lg:flex-row justify-between ">
+                    <input type="text" placeholder="نام و نام خانوادگی"
+                        class=" w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg " name="name">
+                    <input type="text"  placeholder="عنوان"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg" name="subject">
+                </div>
+                <div class="in w-full flex  flex-col lg:flex-row justify-between">
+                    <input type="text"  placeholder="ایمیل"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg" name="email">
+                    <input type="text"  placeholder="شماره همراه"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg"
+                        name="phone_number">
+                </div>
+                <div class="in mt-2 lg:mt-2 area">
+                    <textarea id="description" placeholder="متن درخواست شده" name="message"
+                        class=" rounded-lg resize-none w-full h-[150px] p-3  placeholder-[#717171] placeholder:text-sm"></textarea>
+                </div>
+                <div class="mt-2">
+                    <input type="submit" value="ثبت تیکت" class=" bg-[#196cb5] rounded-lg text-white h-12 atn">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="flex flex-col text-center gap-5 max-w-[1350px] w-full  m-auto p-5" dir="rtl">
+    </div>
+    {% block extra_js %}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{% static 'assets/js/menu.js' %}"></script>
+    <script src="{% static 'assets/js/dark.js' %}"></script>
+    {% endblock extra_js %}
+{% endblock %}
