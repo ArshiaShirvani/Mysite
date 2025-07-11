@@ -1,0 +1,166 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load profile_tags %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@latest/index.css" rel="stylesheet">
+
+<style>
+    .in input {
+        border: 1px solid #ddd;
+        transition: border-color 0.3s ease;
+    }
+
+    .in textarea {
+        border: 1px solid #ddd;
+    }
+
+    .in input:hover {
+        border: 1px solid #353535;
+    }
+
+    .in textarea:hover {
+        border: 1px solid #353535;
+    }
+
+    .grt {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .pad {
+        padding: 0 7px;
+    }
+</style>
+{% endblock extra_css %}
+{% block content %}
+<div class="flex flex-col text-center gap-5 max-w-[1350px] w-full  m-auto py-12" dir="rtl">
+    <h1 class="text-5xl">وبلاگ</h1>
+    <p class="text-[13px]">صفحه اصلی / وبلاگ / انتقال پروژه Django از پلتفرم Liara به پلتفرم Hamravesh</p>
+</div>
+<div class="flex flex-col gap-5 max-w-[1350px] m-auto lg:flex-row" dir="rtl">
+    <!-- دیو با عرض بزرگ -->
+    <div
+        class="w-full rounded-lg border flex items-start justify-start text-white text-xl font-bold px-4 pt-0 pb-8 flex-wrap gap-8 lg:w-2/3">
+        <img src="{% static 'assets/img/bl1.webp' %}" class="w-full rounded-lg mt-4">
+        <h3 class="text-3xl">{{object.title}}</h3>
+        <p class="text-[18px]">خوب رسیدیم به بخش ترسناکی که برای خیلی ها می تونه کابوس باشه اونم انتقال پروژه از یک
+            پلتفرم به پلتفرم دیگه، اما با این ویدئو مسائل رو براتون خیلی ساده تر کردم تا ببینید اصلا ترس نداره.</p>
+        <p class="text-[18px]">
+            خیلی وقتا پیش میاد که بخواید به دلایل مختلف پلتفرم هاست پروژتون رو عوض کنین و همیشه براتون سوال میشه که
+            چطور؟ خوب سادس میشه با یه ویدئو کوتاه و چندتا نکته کلیدی در هنگام انتقال این موضوع رو تسهیل کرد.
+        </p>
+    </div>
+    <!-- دیو با عرض کوچک -->
+    <div class="w-full flex flex-col justify-center text-white text-xl font-bold lg:w-1/3">
+        <div class=" border  text-white p-6 rounded-lg shadow flex flex-col gap-4 w-full h-[300px]">
+            <img src="{% static 'assets/img/myimg.png' %}"
+                class="w-[160px] h-[160px] rounded-full object-cover m-auto border" alt="تبلیغ">
+            {% get_profile request.user as my_profile %}
+            <p class="text-base text-center">{{my_profile.first_name}} {{my_profile.last_name}}</p>
+            <p class="text-center text-[13px]">نویسنده</p>
+        </div>
+        <br>
+        <div class=" border  text-white p-6 rounded-lg shadow flex flex-col gap-4 w-full">
+            <h3 class=" text-xl text-gray-900">آخرین پست ها</h3>
+            <div class="flex">
+                <img src="{% static 'assets/img/bl1.webp' %}" class="w-[180px] rounded-lg ml-2">
+                <span class="flex flex-col">
+                    <p class="text-[14px]">پیاده سازی و استقرار پروژه ها بر روی پلتفرم dokploy</p>
+                    <span class="w-full flex justify-between text-xs py-4">
+                        <p>python</p>
+                        <p>1403/05/28</p>
+                    </span>
+
+                </span>
+            </div>
+            <div class="flex">
+                <img src="{% static 'assets/img/bl2.webp' %}" class="w-[180px] rounded-lg ml-2">
+                <span class="flex flex-col">
+                    <p class="text-[14px]">پیاده سازی و استقرار پروژه ها بر روی پلتفرم dokploy</p>
+                    <span class="w-full flex justify-between text-xs py-4">
+                        <p>python</p>
+                        <p>1403/05/28</p>
+                    </span>
+
+                </span>
+            </div>
+            <div class="flex">
+                <img src="{% static 'assets/img/bl3.webp' %}" class="w-[180px] rounded-lg ml-2">
+                <span class="flex flex-col">
+                    <p class="text-[14px]">پیاده سازی و استقرار پروژه ها بر روی پلتفرم dokploy</p>
+                    <span class="w-full flex justify-between text-xs py-4">
+                        <p>python</p>
+                        <p>1403/05/28</p>
+                    </span>
+
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="flex w-full flex-col gap-5 max-w-[1350px] m-auto lg:flex-row" dir="rtl">
+    <!-- دیو با عرض کوچک -->
+    <div class="w-full flex  justify-center text-white text-xl font-bold lg:w-2/5 border rounded-lg">
+        <div class=" text-white  rounded-lg shadow flex flex-col gap-4 w-full p-[30px] lg:p-[20px]">
+            <div class="flex flex-end">
+                <h1 class="text-2xl text-gray-900">برچسب:</h1>
+            </div>
+            <div class="flex flex-wrap gap-4 py-4">
+                {% for tag in object.tags.all %}
+                <span
+                    class="pad w-[30%] text-[13px] text-gray-500 border rounded-lg h-[40px] flex items-center justify-center ">
+                    {{tag.name}}
+                </span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    {% if user.is_authenticated %}
+    <!-- دیو با عرض بزرگ -->
+    <div class="w-full rounded-lg  p-6 lg:w-3/5 flex flex-col border rounded-lg">
+        <form action="{% url 'blog:submit-comment' %}" method="post">
+            {% csrf_token %}
+            <div class="">
+                <h1 class="text-2xl text-gray-900">ثبت دیدگاه</h1>
+                <br>
+            </div>
+            <div class="in w-full flex  text-5xl flex-col lg:flex-row justify-between ">
+
+                <input type="text" name="post" value="{{object.id}}" placeholder="ایمیل"
+                    class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg" hidden>
+            </div>
+            <div class="in mt-2 lg:mt-2 area">
+                <textarea id="description" placeholder="متن درخواست شده" name="message"
+                    class=" rounded-lg resize-none w-full h-[150px] p-3  placeholder-[#717171] placeholder:text-sm"></textarea>
+            </div>
+            <div class="mt-2">
+                <input type="submit" value="ثبت دیدگاه" class="bg-[#196cb5] text-white rounded-lg h-12 px-4 text-base">
+            </div>
+        </form>
+    </div>
+    {% endif %}
+</div>
+<br>
+<div class="flex flex-col  gap-5 max-w-[1350px] w-full  m-auto p-5 border rounded-lg" dir="rtl">
+    <h1 class="text-2xl text-gray-900">دیدگاه ها</h1>
+    {% for comment in comments %}
+    <div class="flex flex-col  gap-5 max-w-[1350px] w-full  m-auto p-5 border rounded-lg" dir="rtl">
+        <span class="flex">
+            <p>{{comment.user.email}}</p>
+
+        </span>
+        <span class="flex">
+
+            <p>{{comment.message}}</p>
+        </span>
+    </div>
+    {% endfor %}
+</div>
+<br>
+{% block extra_js %}
+<script src="https://cdn.tailwindcss.com"></script>
+{% endblock extra_js %}
+{% endblock %}
