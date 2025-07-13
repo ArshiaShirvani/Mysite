@@ -82,20 +82,20 @@ def password_reset_confirm(request, token, uidb64):
             confirm_password = request.POST.get('confirm_password')
 
             if new_password != confirm_password:
-                messages.error(request, 'The password and confirmation do not match')
+                messages.error(request, 'رمز عبور های شما باهم مطابقت ندارند')
             elif len(new_password) < 8:
-                messages.error(request, 'Password must be at least 8 characters long')
+                messages.error(request, 'رمز عبور شما باید بیشتر از 8 کاراکتر باشد')
             else:
                 # Saving new password
                 user.set_password(new_password)
                 user.save()
-                messages.success(request, 'Your password has been successfully changed')
+                messages.success(request, 'رمز عبور شما با موفقیت تغییر کرد')
                 return redirect(reverse_lazy("accounts:login"))  
 
         # send token and uid64 to the template
         return render(request, 'accounts/password_reset_confirm.html', {'validlink': True, 'uid': uidb64, 'token': token})
     else:
-        messages.error(request, 'The recovery link is invalid or has expired')
+        messages.error(request, 'لینک ارسال شده نامعتبر است')
         return render(request, 'accounts/password_reset_confirm.html', {'validlink': False})
 
 
@@ -130,10 +130,13 @@ def password_reset_request(request):
                 [email],  
                 fail_silently=False
             )
-            
+            messages.success(
+                request,"لینک تغییر رمز عبور برای شما ارسال شد"
+            )
             return render(request,'website/index.html')
         else:
             messages.error(
-                request,"No account associated with this email address exists"
+                request,"هیچ کاربری مطابق با ایمیل شما پیدا نشد"
             )
+        return render(request, 'accounts/authentication.html')
     
