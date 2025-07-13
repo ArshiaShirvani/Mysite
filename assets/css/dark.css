@@ -71,13 +71,19 @@ html.dark .custom-slider{
 }
 /* دکمه‌ها */
 html.dark .login,
-html.dark .in-part,
 html.dark .user,
 html.dark button,
 html.dark .btn,
 html.dark .newsletter-button {
-    background-color: #2a2a2a;
+    background-color: #1e1e1e;
+    border-radius: 5px;
 
+}
+html.dark .btn{
+        border: 1px solid #6a6a6a;
+}
+html.dark .btn i{
+        font-size: 17px;
 }
 
 html.dark button:hover,
@@ -140,4 +146,9 @@ html.dark .custom-slider {
 html.dark .direction-slider {
     background-color: #1e1e1e;
     color: white;
+    border-radius:10px;
+}
+.Show-menu{
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
