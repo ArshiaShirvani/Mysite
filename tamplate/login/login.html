@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../../assets/css/dark-login.css">
     <link rel="stylesheet" href="Styles/Fonts.css">
     <link rel="stylesheet" href="Styles/Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -49,7 +50,7 @@
                     <i class="fas fa-lock"></i>
                     <input type="password" placeholder="مجدد رمز عبور خود را وارد کنید...">
                 </div>
-                <button>ثبت نام</button>
+                <button class="login-v">ثبت نام</button>
                 <p> ! می توانید با پلتفرم های زیر وارد شوید </p>
                 <div class="Social-icos">
                     <a href="#" class="icon">
@@ -61,7 +62,7 @@
                         <span>Github</span><i class="fa-brands fa-github"></i>
                     </a>
                 </div>
-                <button class="Btn-Media" id="La">قبلا ثبت نام کرده ام</button>
+                <button class="Btn-Media login-v" id="La">قبلا ثبت نام کرده ام</button>
             </form>
         </div>
         <div class="Form-container Sign-in">
@@ -78,7 +79,7 @@
                     <input type="password" placeholder="رمز عبور خود را وارد کنید...">
                 </div>
                 <button id="show"><a href="#">رمز خود را فراموش کرده اید ؟</a></button>
-                <button>ورود</button>
+                <button class="login-v">ورود</button>
                 <p> ! می توانید با پلتفرم های زیر وارد شوید </p>
                 <div style="display: flex; gap: 10px;">
                     <p for="checkbox">مرا به خاطر بسپار</p>
@@ -92,7 +93,7 @@
                         <span>Github</span><i class="fa-brands fa-github"></i>
                     </a>
                 </div>
-                <button class="Btn-Media" id="Re">عضویت در وب سایت</button>
+                <button class="Btn-Media login-v" id="Re">عضویت در وب سایت</button>
             </form>
         </div>
         <div class="Toggle-Container">
@@ -102,7 +103,7 @@
                     <p>
                         !اگر از قبل وارد وبسایت شده اید این پایین کلیک کنید. تجربه بهترین با ما
                     </p>
-                    <button class="hidden" id="Login">ورود</button>
+                    <button class="hidden " id="Login">ورود</button>
                     <img src="Image/p3.png" alt="" width="70%" height="60%" class="img1">
                 </div>
             </div>
@@ -111,12 +112,13 @@
                 <p>
                     !اگر حسابی ندارید این پایین کلیک کنید. تجربه بهترین ها با ما
                 </p>
-                <button class="hidden" id="register">ثبت نام</button>
+                <button class="hidden login-v" id="register">ثبت نام</button>
                 <img src="Image/p1.png" alt="" width="70%" height="60%" class="img2">
             </div>
         </div>
     </div>
     <script src="Js/Script.js"></script>
+    <script src="../../assets/js/dark.js"></script>
 </body>
 
 </html>
