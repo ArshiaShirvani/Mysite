@@ -3,8 +3,9 @@ html.dark body {
     background-color: #1e1e1e;
     color: white;
 }
+
 html.dark .cardblog,
-html.dark .cardbook{
+html.dark .cardbook {
     background-color: #2a2a2a;
     box-shadow: 0 0 10px 0;
 }
@@ -29,11 +30,13 @@ html.dark footer {
     background-color: #1e1e1e;
     color: white;
 }
-html.dark .search{
+
+html.dark .search {
     background-color: #2a2a2a;
     border: .5px solid #3a3a3a;
 
 }
+
 html.dark footer a {
     color: #90caf9;
 }
@@ -56,28 +59,50 @@ html.dark input[type="text"],
 html.dark input[type="email"] {
     color: black;
 }
-html.dark textarea{
+
+html.dark textarea {
     color: black;
 }
-html.dark .search input[type="text"]{
+
+html.dark .search input[type="text"] {
     color: white;
 }
-html.dark .search-res input[type="text"]{
+
+html.dark .search-res input[type="text"] {
     color: white;
 }
-html.dark .custom-slider{
+
+html.dark .custom-slider {
     box-shadow: 0px 0px 10px 0px;
-   
+
 }
+
 /* دکمه‌ها */
 html.dark .login,
-html.dark .in-part,
 html.dark .user,
 html.dark button,
 html.dark .btn,
 html.dark .newsletter-button {
-    background-color: #2a2a2a;
+    background-color: #1e1e1e;
+    border-radius: 5px;
 
+}
+
+html.dark .in-part {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px 0 #838383;
+}
+
+html.dark .custom-slider {
+    box-shadow: 0 0 10px 0 #838383;
+}
+
+html.dark .btn {
+    border: 1px solid #6a6a6a;
+}
+
+html.dark .btn i {
+    font-size: 17px;
 }
 
 html.dark button:hover,
@@ -140,4 +165,10 @@ html.dark .custom-slider {
 html.dark .direction-slider {
     background-color: #1e1e1e;
     color: white;
+    border-radius: 10px;
+}
+
+.Show-menu {
+    border-radius: 15px;
+    margin-bottom: 15px;
 }

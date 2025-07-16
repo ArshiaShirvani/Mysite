@@ -89,18 +89,25 @@
 .btn i{
     font-size: 20px;
 }
+#themeToggle{
+    border-radius: 5px;
+}
+#themeToggle i{
+    padding: 10px 0;
+    font-size: 17px;
+}
 .cont-input{
     width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #6a6a6a;
-    padding:7px 10px;
-    border-radius: 10px;
+    padding:7px 5px;
+    border-radius: 5px;
 
 }
 .cont-input input{
-    width: 80%;
+    width: 85%;
     height: 40px;
     font-size: 18px;
 }

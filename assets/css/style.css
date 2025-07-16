@@ -23,8 +23,10 @@
     padding: 0;
     font-family: Vazir;
     text-decoration: none;
+    border-radius: 0;
 
 }
+
 
 body {
     transition: all 0.3s, color 0.3s;
@@ -147,16 +149,19 @@ button i {
     transition: 0.3s ease;
     height: 45px;
 }
+
 .theme-toggle-mobile {
     border: none;
     cursor: pointer;
     font-size: 1.5rem;
     width: 20%;
     border: 1px solid #6a6a6a;
-  }
-footer{
+}
+
+footer {
     width: 100%;
-}  
+}
+
 .contaner-btn .user {
     background-color: var(--bg-light);
     color: var(--primary-color);
@@ -179,8 +184,8 @@ footer{
     color: var(--primary-color);
 }
 
-.contaner-btn .login:hover {
-    background-color: #ddd;
+.user i {
+    font-size: 20px;
 }
 
 .burger,
@@ -232,9 +237,11 @@ h6 {
     color: #333;
     transition: all .5s;
 }
-.pro{
+
+.pro {
     margin-top: 10px;
 }
+
 .Show-login .pro:hover {
     background-color: #006cbe80;
 }
@@ -327,14 +334,15 @@ h6 {
     max-width: 400px;
     width: 100%;
     height: 120px;
-    background-color: #c0c0c0;
     border-radius: 10px;
-    margin: 20px 20px;
+    margin: 20px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+    box-shadow: 0 0 10px 0 #838383;
 }
+
 
 .in-part i {
     font-size: 50px;
@@ -636,9 +644,11 @@ footer {
     padding-bottom: 20px;
     border-bottom: 1px solid gray;
 }
-.blog-container div{
+
+.blog-container div {
     border-radius: 10px;
 }
+
 .footer-item {
     text-align: center;
 }
@@ -725,6 +735,7 @@ footer {
 span {
     padding: 1px;
 }
+
 
 @media only screen and (max-width: 1500px) {
 
@@ -923,19 +934,32 @@ span {
     .left-content {
         width: 100%;
     }
+  
 
 }
 
+@media only screen and (max-width: 1280px) {
+    .in-part{
+        max-width: 470px;
+    }
+}
 
+@media only screen and (max-width: 1020px) {
+    .in-part{
+        max-width: 100%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
-    .left-newsletter{
+    .left-newsletter {
         padding: 15px;
     }
-    .input-content{
+
+    .input-content {
         padding: 0px;
         height: 50px;
     }
+
     .newsletter-content {
         border-radius: 10px;
     }
