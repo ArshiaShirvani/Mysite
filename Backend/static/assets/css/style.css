@@ -4,6 +4,10 @@
     transition: height 0.3s ease-in-out;
 }
 
+footer {
+    width: 100%;
+}
+
 .re a {
     border-bottom: 1px solid #ececec;
     padding: 10px;
@@ -23,11 +27,17 @@
     padding: 0;
     font-family: Vazir;
     text-decoration: none;
+
 }
 
 body {
     transition: all 0.3s, color 0.3s;
     overflow-x: hidden;
+
+}
+
+.active-link {
+    color: #2e8ffd;
 }
 
 .dark-theme {
@@ -175,12 +185,12 @@ button i {
 
 .Show-login {
     opacity: 0;
-    background: #ddd;
+    background: #fff;
     width: 250px;
-    height: 140px;
+    height: 160px;
     position: absolute;
-    left: 40px;
-    top: 75px;
+    left: 90px;
+    top: 85px;
     display: flex;
     flex-direction: column;
     justify-content: right;
@@ -188,28 +198,49 @@ button i {
     transition: opacity .5s;
     padding: 10px;
     z-index: 1;
-    box-shadow: 0px 0px 15px 0px #ddd;
+    box-shadow: 0px 0px 10px 0px #ddd;
 }
-hr{
+
+.pro {
+    margin-top: 10px;
+}
+
+hr {
     background-color: #ccc;
-    margin:10px 0px ;
+    margin: 10px 0px;
 }
-.Show-login a{
-    width: 100%;
-    height: 25%;
-    border-radius: 10px;
-    font-size: 13px;
-    align-content: center;
-    padding:0px 5px ;
+
+h5 {
+    font-size: 14px;
     color: #333;
 }
-.Show-login .pro:hover{
+
+h6 {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #333;
+}
+
+.Show-login a {
+    width: 100%;
+    height: 25%;
+    border-radius: 3px;
+    font-size: 14px;
+    align-content: center;
+    padding: 10px 5px;
+    color: #333;
+    transition: all .5s;
+}
+
+.Show-login .pro:hover {
     background-color: #006cbe80;
 }
-.Show-login .out:hover{
+
+.Show-login .out:hover {
     background-color: #be000080;
 }
-.active-show{
+
+.active-show {
     opacity: 1;
 }
 
@@ -570,7 +601,7 @@ p {
     border-radius: 10px;
     margin: 5px;
     border: none;
-    background-color: #0d1d2b;
+    background-color: #196cb5;
     color: #fff;
     cursor: pointer;
     animation: big 3s linear infinite;
@@ -602,7 +633,9 @@ footer {
     padding-bottom: 20px;
     border-bottom: 1px solid gray;
 }
-
+.blog-container div{
+    border-radius: 10px;
+}
 .footer-item {
     text-align: center;
 }
@@ -728,8 +761,27 @@ span {
     }
 }
 
+.in input {
+    border: 2px solid #0000;
+    transition: all .3s;
+}
+
+.in input:hover {
+    border: 2px solid;
+}
+
+.area textarea {
+    border: 2px solid #0000;
+    transition: all .3s;
+}
+
+.area textarea:hover {
+    outline: none;
+    border: 2px solid #6a6a6a;
+}
+
 @media only screen and (max-width: 1250px) {
-    .contaner-btn .user{
+    .contaner-btn .user {
         background-color: white;
     }
 
@@ -874,8 +926,19 @@ span {
 
 
 @media only screen and (max-width: 768px) {
+    .left-newsletter{
+        padding: 15px;
+    }
+    .input-content{
+        padding: 0px;
+        height: 50px;
+    }
+    .newsletter-content {
+        border-radius: 10px;
+    }
+
     .Show-login {
-        left: 15px;
+        left: 27px;
     }
 
     .login p {

@@ -1,0 +1,17 @@
+html{
+    display: flex;
+    justify-content: center;
+ 
+}
+body {
+    overflow-x: hidden;
+    width: 95%;
+}
+/* @media only screen and (max-width: 768px) {
+    body {
+        width: 96%;
+    }
+    .link-blog{
+        text-align: center;
+    }
+} */
