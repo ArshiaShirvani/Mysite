@@ -36,6 +36,9 @@ html.dark .search {
     border: .5px solid #3a3a3a;
 
 }
+html.dark .burger span{
+    background-color: #fff;
+}
 
 html.dark footer a {
     color: #90caf9;

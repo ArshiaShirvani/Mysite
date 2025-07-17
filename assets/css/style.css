@@ -196,25 +196,49 @@ footer {
 .Show-login {
     opacity: 0;
     background: #fff;
-    width: 250px;
-    height: 160px;
+    width: 300px;
+    height: 165px;
     position: absolute;
-    left: 90px;
+    left: 83px;
     top: 85px;
     display: flex;
     flex-direction: column;
     justify-content: right;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: opacity .5s;
     padding: 10px;
     z-index: 1;
     box-shadow: 0px 0px 10px 0px #ddd;
 }
 
-hr {
-    background-color: #ccc;
-    margin: 10px 0px;
+.contact {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 0 20px 0;
 }
+
+.lpro {
+    width: 28%;
+    height: 50px;
+
+}
+
+.lpro img {
+    width: 65px;
+    position: relative;
+    bottom: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rpro {
+    width: 75%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
 
 h5 {
     font-size: 14px;
@@ -222,9 +246,8 @@ h5 {
 }
 
 h6 {
-    margin-top: 5px;
     font-size: 13px;
-    color: #333;
+    color: #808080;
 }
 
 .Show-login a {
@@ -239,15 +262,38 @@ h6 {
 }
 
 .pro {
-    margin-top: 10px;
+    border-radius: 3px;
+    padding: 4px 15px;
+    margin-top: 7px;
+    cursor: pointer;
 }
 
+.out {
+    border-radius: 3px;
+    padding: 4px 15px;
+    cursor: pointer;
+}
+
+.pro i,
+.pro a {
+    color: #808080;
+}
+
+.out i{
+    position: relative;
+    top: 3px;
+}
+
+.out i , .out a { color: #808080;}
+
 .Show-login .pro:hover {
-    background-color: #006cbe80;
+    background-color: #006cbe50;
+    color: #006cbe50;
 }
 
 .Show-login .out:hover {
-    background-color: #be000080;
+    background-color: #be000050;
+    color: #be000050;
 }
 
 .active-show {
@@ -934,18 +980,18 @@ span {
     .left-content {
         width: 100%;
     }
-  
+
 
 }
 
 @media only screen and (max-width: 1280px) {
-    .in-part{
+    .in-part {
         max-width: 470px;
     }
 }
 
 @media only screen and (max-width: 1020px) {
-    .in-part{
+    .in-part {
         max-width: 100%;
     }
 }
