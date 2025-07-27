@@ -150,6 +150,11 @@ button i {
     height: 45px;
 }
 
+.contaner-btn .login:hover {
+    background-color: #c6c6c6;
+}
+
+
 .theme-toggle-mobile {
     border: none;
     cursor: pointer;
@@ -196,7 +201,7 @@ footer {
 .Show-login {
     opacity: 0;
     background: #fff;
-    width: 300px;
+    width: 280px;
     height: 165px;
     position: absolute;
     left: 83px;
@@ -279,12 +284,15 @@ h6 {
     color: #808080;
 }
 
-.out i{
+.out i {
     position: relative;
     top: 3px;
 }
 
-.out i , .out a { color: #808080;}
+.out i,
+.out a {
+    color: #808080;
+}
 
 .Show-login .pro:hover {
     background-color: #006cbe50;
@@ -845,6 +853,11 @@ span {
         background-color: white;
     }
 
+    .lpro img {
+        width: 60px;
+        height: 60px;
+    }
+
     .container {
         align-items: center;
         flex-direction: column;
@@ -896,9 +909,7 @@ span {
         height: 12vh;
     }
 
-    .header img {
-        width: 120px;
-    }
+   
 
     .search {
         width: 100%;

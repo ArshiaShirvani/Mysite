@@ -39,7 +39,9 @@ html.dark .search {
 html.dark .burger span{
     background-color: #fff;
 }
-
+html.dark .contaner-btn .login:hover {
+    background-color: #3a3a3a;
+}
 html.dark footer a {
     color: #90caf9;
 }

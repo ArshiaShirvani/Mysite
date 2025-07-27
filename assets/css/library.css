@@ -1,16 +1,30 @@
-.Show-menu li{
+.Show-menu li {
     border-radius: 0px;
 }
-.bor{
-    border-radius:0px ;
+
+.bor {
+    border-radius: 0px;
 }
-.r{
+
+.r {
     border-radius: 8px 8px 0 0;
 }
+
 footer {
-    border-radius:0 ;
-    margin-top:20px ;
+    border-radius: 0;
+    margin-top: 20px;
 }
-.footer-bottom{
-     border-radius:0 ;
+
+.footer-bottom {
+    border-radius: 0;
+}
+
+.cardbook {
+    transition: all .5s linear;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cardbook:hover {
+    transform: scale(1.025);
 }
