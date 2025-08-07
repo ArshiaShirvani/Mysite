@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/slider.css">
+    <link rel="stylesheet" href="../assets/css/sizebody.css">
+    <link rel="stylesheet" href="../assets/css/library.css">
+    <link rel="stylesheet" href="../assets/css/dark.css">
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@latest/index.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick Slider CSS + JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- FontAwesome (برای فلش‌ها) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .in input {
+            border: 1px solid #ddd;
+            transition: border-color 0.3s ease;
+        }
+
+        .in textarea {
+            border: 1px solid #ddd;
+        }
+
+        .in input:hover {
+            border: 1px solid #353535;
+        }
+
+        .in textarea:hover {
+            border: 1px solid #353535;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaner lg:flex-col">
+        <div class="header">
+            <img class="logo-light" src="../assets/img/logo-light.png" alt="" style="width: 100px;">
+            <img class="logo-dark" src="../assets/img/logo-dark.png" alt="" style="width: 100px;">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">صفحه اصلی</a></li>
+                    <li><a href="blog.html">وبلاگ</a></li>
+                    <li><a href="/library">کتابخانه</a></li>
+                    <li><a href="about.html">درباره من</a></li>
+                    <li><a href="contact.html">تماس با من</a></li>
+                </ul>
+            </nav>
+
+            <div class="contaner-btn">
+                <label class="burger" for="burger">
+                    <input type="checkbox" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="جستجو...">
+                    </form>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <button id="themeToggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                <a href="login/login.html" class="login">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <p>ورود</p>
+                </a>
+            </div>
+        </div>
+        <!-- Mobile nav -->
+        <div class="Show-menu">
+            <ul>
+                <li><a href="index.html">صفحه اصلی</a></li>
+                <li><a href="blog.html">وبلاگ</a></li>
+                <li><a href="#">کتابخانه</a></li>
+                <li><a href="about.html">درباره من</a></li>
+                <li><a href="contact.html">تماس با من</a></li>
+                <li class="search-res">
+                    <form action="" class="cont-input">
+                        <input type="text" placeholder="جستجو...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                    <button class="btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="flex flex-col text-center gap-5 max-w-[1350px] w-full  m-auto py-12" dir="rtl">
+        <h1 class="text-5xl">پروفایل</h1>
+        <p class="text-[13px]">صفحه اصلی / پروفایل</p>
+    </div>
+
+    <div class="flex flex-col gap-5 max-w-[1350px] m-auto lg:flex-row" dir="rtl">
+
+        <!-- دیو با عرض کوچک -->
+        <div
+            class="w-full flex flex-col justify-start text-center item-start text-white text-xl font-bold lg:w-2/6 border rounded-lg rounded-lg p-4 p-[50px]">
+            <img src="../assets/img/profile.png" class="w-[400px] cursor-pointer al border rounded-full mb-5">
+            <p>ارشیا شیروانی</p>
+            <br>
+            <p>تاریخ عضویت <span>1403/10/20</span></p>
+        </div>
+        <!-- دیو با عرض بزرگ -->
+        <div
+            class="w-full rounded-lg border rounded-lg  flex flex-col justify-start text-white text-xl p-8 flex-wrap lg:w-4/6 space-y-2 h-[800px] lg:h-[550px]">
+            <form action="">
+                <div class="in w-full flex-col  text-5xl  mb-2 lg:flex-row justify-between border lg:flex">
+                    <div class=" w-full flex justify-center lg:justify-start">
+                        <img src="../assets/img/profile.png" class="w-[180px] h-[180px] cursor-pointer ">
+
+                    </div>
+                    <div class="w-full p-2 flex gap-2 lg:w-2/4 lg:px-4">
+                        <input type="submit"
+                            class="bg-[#9a9a9a] rounded-lg text-white h-12 atn cursor-pointer mt-[10px] lg:mt-[95px]"
+                            value="حذف">
+                        <input type="submit"
+                            class=" bg-[#1d4161] rounded-lg text-white h-12 atn cursor-pointer mt-[10px] lg:mt-[95px]"
+                            value="ذخیره">
+
+                    </div>
+                </div>
+                <div class="in w-full flex  text-5xl flex-col lg:flex-row justify-between ">
+                    <input type="text" name="" placeholder="نام"
+                        class=" w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg ">
+                    <input type="text" name="" placeholder="نام خانوادگی"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                </div>
+                <div class="in w-full flex  flex-col lg:flex-row justify-between">
+                    <input type="text" name="" placeholder="نام کاربری"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                    <input type="text" name="" placeholder="شماره همراه"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                </div>
+                <div class="in w-full flex  flex-col lg:flex-row justify-between">
+                    <input type="text" name="" placeholder="ایمیل"
+                        class="w-full p-4 bg-white my-2 lg:w-[49%] rounded-lg">
+                </div>
+                <div class="in mt-2 lg:mt-2 area">
+                </div>
+                <div class="">
+                    <input type="submit" class="my-4 bg-[#1d4161] rounded-lg text-white h-12 atn cursor-pointer"
+                        value="ذخیره">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>لینک‌های مهم</h3>
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">خدمات</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">حریم خصوصی</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>تماس با ما</h3>
+                <p> ایمیل: info@example.com</p>
+                <span>
+                    <p> تلفن: 09123456789</p>
+                </span>
+                <span>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </span>
+            </div>
+            <div class="footer-section">
+                <h3>لینک‌های پر استفاده</h3>
+                <ul>
+                    <li><a href="#">درباره ما</a></li>
+                    <li><a href="#">خدمات</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">حریم خصوصی</a></li>
+                </ul>
+            </div>
+            <div class="footer-section section">
+                <h3>زبان های برنامه نویسی ما</h3>
+                <div class="social-container">
+                    <ul>
+                        <li><a href="#">جنگو</a></li>
+                        <li><a href="#">جاوا اسکریپت</a></li>
+                        <li><a href="#">تیلویند</a></li>
+                        <li><a href="#">پایتون</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-section section">
+                <h3>درباره ما</h3>
+                <div class="social-container">
+                    <p>
+                        بزرگترین هدف من تغییر روند آموزش و بالا بردن کیفیت تفکر توسعه دهنده هستش <br>تا بتونیم در
+                        جمع بزرگتری از دنیا فعالیت کنیم و بدون هیچ مشکلی در جایگاه های قوی تریم.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 .تمامی حقوق محفوظ است</p>
+            <p>.تمامی این حقوق مربوط به ارشیا شیروانی می باشد و هرگونه کپی رات غیر قانونی است</p>
+        </div>
+    </footer>
+    <script src="../assets/js/menu.js"></script>
+    <script src="../assets/js/dark.js"></script>
+</body>
+
+</html>
