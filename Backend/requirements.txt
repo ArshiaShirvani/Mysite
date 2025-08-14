@@ -1,6 +1,7 @@
 django>4.2,<4.3
 python-decouple
 pillow
+django-taggit
 
 # postgreSQl modules
 psycopg

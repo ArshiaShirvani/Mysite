@@ -19,6 +19,7 @@ from django.shortcuts import redirect
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponseRedirect
 
+
 class PostListView(ListView):
     template_name = "blog/post-list.html"
     context_object_name = 'posts'
