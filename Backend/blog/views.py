@@ -5,8 +5,6 @@ from django.shortcuts import render
 from django.views.generic import (
     ListView,
     DetailView,
-    TemplateView,
-    CreateView,
     FormView
 )
 from .models import PostModel,PostCategory,PostStatusType,CommentModel
