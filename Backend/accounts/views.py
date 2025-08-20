@@ -18,9 +18,12 @@ from django.core.mail import send_mail
 from django.contrib.auth import get_user_model
 from django.utils.http import urlsafe_base64_decode
 from django.contrib.auth.tokens import default_token_generator
+from .forms import PasswordResetRequestForm,SetNewPasswordForm
 
 User = get_user_model()
-from .forms import PasswordResetRequestForm,SetNewPasswordForm
+
+
+
 
 class LoginView(auth_views.LoginView):
     template_name = "accounts/authentication.html"
